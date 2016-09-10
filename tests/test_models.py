@@ -5,6 +5,7 @@ import collections
 import datetime
 import logging
 import unittest
+import datetime
 
 from requests import HTTPError
 
@@ -53,9 +54,6 @@ class LocationTestCase(unittest.TestCase):
         self.assertIsNotNone(obj.events)
         logger.debug("There are %s events to observe...", len(obj.events))
         for event in obj.events:
+            # Ensure that the event datetime is parsed into a datetime object
+            self.assertIsInstance(event.datetime, datetime.datetime)
             logger.debug("event.venue => %s", event.venue)
-
-    def test_search(self):
-        ApiConfig.init(app_id="testing")
-        results = Venue.search(location="Nashville", query="justin", radius=10)
-        logger.debug("results => %s", results)

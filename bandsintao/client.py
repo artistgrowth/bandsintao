@@ -9,10 +9,10 @@ import urlparse
 
 import requests
 import requests.adapters
+import requests_toolbelt.utils.dump as toolbelt
 import six
-from requests_toolbelt.utils import dump
 
-from . import jjson
+import jjson
 
 logger = logging.getLogger(__name__)
 
@@ -38,25 +38,28 @@ def polite_request(url, timeout_seconds=30, max_retries=5, **params):
     Session and a timeout for the request. The following exceptions are documented here:
     http://docs.python-requests.org/en/latest/user/quickstart/#errors-and-exceptions
     """
-    try:
-        session = requests.Session()
-        session.mount("http://", requests.adapters.HTTPAdapter(max_retries=max_retries))
-        session.mount("https://", requests.adapters.HTTPAdapter(max_retries=max_retries))
-        result = requests.get(url=url, timeout=timeout_seconds, params=params)
-    except requests.exceptions.ConnectionError:
-        logger.exception("ConnectionError: A connection error occurred")
-    except requests.exceptions.Timeout:
-        logger.exception("Timeout: The request timed out")
-    # We also have to catch socket timeouts due to the underlying urllib3 library:
-    # https://github.com/kennethreitz/requests/issues/1236
-    except socket.timeout:
-        logger.exception("Socket timeout: The request timed out")
-    except requests.exceptions.TooManyRedirects:
-        logger.exception("TooManyRedirects: The url => \"%s\" has too many redirects", url)
-    except requests.exceptions.RequestException:
-        logger.exception("Error")
-    else:
-        return result
+    response = None
+    with requests.Session() as session:
+        try:
+            session.mount("http://", requests.adapters.HTTPAdapter(max_retries=max_retries))
+            session.mount("https://", requests.adapters.HTTPAdapter(max_retries=max_retries))
+            response = session.get(url=url, timeout=timeout_seconds, params=params)
+            # Patch requests so the built-in json will convert dates if parsed
+            response.json.im_func.func_globals["complexjson"] = jjson
+        except requests.exceptions.ConnectionError:
+            logger.exception("ConnectionError: A connection error occurred")
+        except requests.exceptions.Timeout:
+            logger.exception("Timeout: The request timed out")
+        except socket.timeout:
+            # We also have to catch socket timeouts due to the underlying urllib3 library:
+            # https://github.com/kennethreitz/requests/issues/1236
+            logger.exception("Socket timeout: The request timed out")
+        except requests.exceptions.TooManyRedirects:
+            logger.exception("TooManyRedirects: The url => \"%s\" has too many redirects", url)
+        except requests.exceptions.RequestException:
+            logger.exception("Error")
+
+    return response
 
 
 def send_request(url, **params):
@@ -71,7 +74,7 @@ def send_request(url, **params):
     payload = response.json()
 
     if logger.isEnabledFor(logging.DEBUG):
-        data = dump.dump_response(response)
+        data = toolbelt.dump_response(response)
         data = data.decode("utf-8").strip().replace("\r\n", "\n")
         boundary = "\n> \n"
         index = data.rfind(boundary) + 4
@@ -81,11 +84,6 @@ def send_request(url, **params):
         logger.debug("\n%s\n%s\n", data, jjson.dumps(raw, sort_keys=True, indent=4))
 
     if response.status_code != requests.codes.ok:
-        message = "Request failed => \n\nGET {url}\nHTTP {status_code}\n{payload}\n".format(
-            url=response.url,
-            status_code=response.status_code,
-            payload=jjson.dumps(payload, sort_keys=True, indent=4))
-        logger.error(message)
         response.raise_for_status()
 
     return payload
@@ -247,9 +245,6 @@ class Artist(BaseApiObject):
 
     @property
     def events(self):
-        """
-        Get all events for one artist using Facebook Id
-        """
         if not self._events:
             data = send_request("/artists/{}/events".format(self.name), artist_id=self.artist_id)
             self._events = Event.parse_all(data)
@@ -258,9 +253,6 @@ class Artist(BaseApiObject):
 
     @staticmethod
     def load(artist_id, name):
-        """
-        Get information about the artist using Facebook Id
-        """
         data = send_request("/artists/{}".format(name), artist_id=artist_id)
         data["artist_id"] = artist_id
         data["upcoming_events_count"] = data.get("upcoming_events_count") or 0
