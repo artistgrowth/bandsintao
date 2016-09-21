@@ -1,0 +1,247 @@
+[
+    {
+        "id": 12637503,
+        "title": "Metallica @ Global Citizen Festival in New York, NY",
+        "datetime": "2016-09-24T19:00:00",
+        "formatted_datetime": "Saturday, September 24, 2016 at 7:00PM",
+        "formatted_location": "New York, NY",
+        "ticket_url": "http://www.bandsintown.com/event/12637503/buy_tickets?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
+        "ticket_type": "Tickets",
+        "ticket_status": "available",
+        "on_sale_datetime": null,
+        "facebook_rsvp_url": "http://www.bandsintown.com/event/12637503?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
+        "description": null,
+        "artists": [
+            {
+                "name": "Metallica",
+                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
+                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
+                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
+                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
+                "facebook_page_url": null,
+                "tracker_count": 2749738,
+                "url": "Metallica",
+                "website": "http://metallica.com"
+            }
+        ],
+        "venue": {
+            "name": "Global Citizen Festival",
+            "place": "Global Citizen Festival",
+            "city": "New York",
+            "region": "NY",
+            "country": "United States",
+            "latitude": 40.7141667,
+            "longitude": -74.0063889
+        }
+    },
+    {
+        "id": 12216472,
+        "title": "Metallica @ Shoreline Amphitheatre in Mountain View, CA",
+        "datetime": "2016-10-22T03:30:00",
+        "formatted_datetime": "Saturday, October 22, 2016 at 3:30AM",
+        "formatted_location": "Mountain View, CA",
+        "ticket_url": "http://www.bandsintown.com/event/12216472/buy_tickets?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
+        "ticket_type": "Tickets",
+        "ticket_status": "available",
+        "on_sale_datetime": null,
+        "facebook_rsvp_url": "http://www.bandsintown.com/event/12216472?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
+        "description": "Tickets will not be delivered until after September 16th. ALL PERFORMERS ARE SUBJECT TO CHANGE. Neil Young + Promise of the Real Metallica Roger Waters Dave Matthews and Tim Reynolds case/lang/veirs Willie Nelson My Morning Jacket Norah Jones Cage The Elephant Nils Lofgren",
+        "artists": [
+            {
+                "name": "Metallica",
+                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
+                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
+                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
+                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
+                "facebook_page_url": null,
+                "tracker_count": 2749738,
+                "url": "Metallica",
+                "website": "http://metallica.com"
+            }
+        ],
+        "venue": {
+            "name": "Shoreline Amphitheatre",
+            "place": "Shoreline Amphitheatre",
+            "city": "Mountain View",
+            "region": "CA",
+            "country": "United States",
+            "latitude": 37.42674,
+            "longitude": -122.080618
+        }
+    },
+    {
+        "id": 12216473,
+        "title": "Metallica @ Shoreline Amphitheatre in Mountain View, CA",
+        "datetime": "2016-10-23T03:30:00",
+        "formatted_datetime": "Sunday, October 23, 2016 at 3:30AM",
+        "formatted_location": "Mountain View, CA",
+        "ticket_url": "http://www.bandsintown.com/event/12216473/buy_tickets?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
+        "ticket_type": "Tickets",
+        "ticket_status": "available",
+        "on_sale_datetime": null,
+        "facebook_rsvp_url": "http://www.bandsintown.com/event/12216473?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
+        "description": "Tickets will not be delivered until after September 12th. ALL PERFORMERS ARE SUBJECT TO CHANGE. Neil Young + Promise of the Real Metallica Roger Waters Dave Matthews and Tim Reynolds case/lang/veirs Willie Nelson My Morning Jacket Norah Jones Cage The Elephant Nils Lofgren",
+        "artists": [
+            {
+                "name": "Metallica",
+                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
+                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
+                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
+                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
+                "facebook_page_url": null,
+                "tracker_count": 2749738,
+                "url": "Metallica",
+                "website": "http://metallica.com"
+            }
+        ],
+        "venue": {
+            "name": "Shoreline Amphitheatre",
+            "place": "Shoreline Amphitheatre",
+            "city": "Mountain View",
+            "region": "CA",
+            "country": "United States",
+            "latitude": 37.42674,
+            "longitude": -122.080618
+        }
+    },
+    {
+        "id": 12888546,
+        "title": "Metallica @ Coliseo De Puerto Rico in San Juan, Puerto Rico",
+        "datetime": "2016-10-26T00:00:00",
+        "formatted_datetime": "Wednesday, October 26, 2016 at 12:00AM",
+        "formatted_location": "San Juan, Puerto Rico",
+        "ticket_url": "http://www.bandsintown.com/event/12888546/buy_tickets?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
+        "ticket_type": "Tickets",
+        "ticket_status": "available",
+        "on_sale_datetime": null,
+        "facebook_rsvp_url": "http://www.bandsintown.com/event/12888546?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
+        "description": "Metallica Coliseo de Puerto Rico Tickets - Buy and sell Metallica Hato Rey Tickets for October 26 at Coliseo de Puerto Rico in Hato Rey, PR on StubHub!",
+        "artists": [
+            {
+                "name": "Metallica",
+                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
+                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
+                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
+                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
+                "facebook_page_url": null,
+                "tracker_count": 2749738,
+                "url": "Metallica",
+                "website": "http://metallica.com"
+            }
+        ],
+        "venue": {
+            "name": "Coliseo De Puerto Rico",
+            "place": "Coliseo De Puerto Rico",
+            "city": "San Juan",
+            "region": "San Juan",
+            "country": "Puerto Rico",
+            "latitude": 18.4287322,
+            "longitude": -66.0632714
+        }
+    },
+    {
+        "id": 12893820,
+        "title": "Metallica @ Parque Bicentenario in Quito, Ecuador",
+        "datetime": "2016-10-29T00:00:00",
+        "formatted_datetime": "Saturday, October 29, 2016 at 12:00AM",
+        "formatted_location": "Quito, Ecuador",
+        "ticket_url": null,
+        "ticket_type": null,
+        "ticket_status": "unavailable",
+        "on_sale_datetime": null,
+        "facebook_rsvp_url": "http://www.bandsintown.com/event/12893820?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
+        "description": null,
+        "artists": [
+            {
+                "name": "Metallica",
+                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
+                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
+                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
+                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
+                "facebook_page_url": null,
+                "tracker_count": 2749738,
+                "url": "Metallica",
+                "website": "http://metallica.com"
+            }
+        ],
+        "venue": {
+            "name": "Parque Bicentenario",
+            "place": "Parque Bicentenario",
+            "city": "Quito",
+            "region": "18",
+            "country": "Ecuador",
+            "latitude": -0.1401937,
+            "longitude": -78.4927035
+        }
+    },
+    {
+        "id": 12881484,
+        "title": "Metallica @ Hipodromo De Los Andes in Bogota, Colombia",
+        "datetime": "2016-11-01T20:00:00",
+        "formatted_datetime": "Tuesday, November 1, 2016 at 8:00PM",
+        "formatted_location": "Bogota, Colombia",
+        "ticket_url": null,
+        "ticket_type": null,
+        "ticket_status": "unavailable",
+        "on_sale_datetime": null,
+        "facebook_rsvp_url": "http://www.bandsintown.com/event/12881484?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
+        "description": "Metallica Colombia",
+        "artists": [
+            {
+                "name": "Metallica",
+                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
+                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
+                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
+                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
+                "facebook_page_url": null,
+                "tracker_count": 2749738,
+                "url": "Metallica",
+                "website": "http://metallica.com"
+            }
+        ],
+        "venue": {
+            "name": "Hipodromo De Los Andes",
+            "place": "Hipodromo De Los Andes",
+            "city": "Bogota",
+            "region": "33",
+            "country": "Colombia",
+            "latitude": 4.6,
+            "longitude": -74.0833333
+        }
+    },
+    {
+        "id": 12893821,
+        "title": "Metallica @ Estadio Cemento Progreso in Ciudad De Guatemala, Guatemala",
+        "datetime": "2016-11-03T00:00:00",
+        "formatted_datetime": "Thursday, November 3, 2016 at 12:00AM",
+        "formatted_location": "Ciudad De Guatemala, Guatemala",
+        "ticket_url": null,
+        "ticket_type": null,
+        "ticket_status": "unavailable",
+        "on_sale_datetime": null,
+        "facebook_rsvp_url": "http://www.bandsintown.com/event/12893821?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
+        "description": null,
+        "artists": [
+            {
+                "name": "Metallica",
+                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
+                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
+                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
+                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
+                "facebook_page_url": null,
+                "tracker_count": 2749738,
+                "url": "Metallica",
+                "website": "http://metallica.com"
+            }
+        ],
+        "venue": {
+            "name": "Estadio Cemento Progreso",
+            "place": "Estadio Cemento Progreso",
+            "city": "Ciudad De Guatemala",
+            "region": "07",
+            "country": "Guatemala",
+            "latitude": 14.6211111,
+            "longitude": -90.5269444
+        }
+    }
+]

@@ -4,9 +4,11 @@ from __future__ import unicode_literals
 import hashlib
 import logging
 import operator
+import re
 import socket
 import urlparse
 
+import bs4
 import requests
 import requests.adapters
 import requests_toolbelt.utils.dump as toolbelt
@@ -22,6 +24,7 @@ class ApiConfig(object):
     Version = "2.0"
     Format = "json"
     BaseUri = "https://api.bandsintown.com"
+    Debug = False
 
     @staticmethod
     def init(app_id, uri=None, version=None):
@@ -43,6 +46,7 @@ def polite_request(url, timeout_seconds=30, max_retries=5, **params):
         try:
             session.mount("http://", requests.adapters.HTTPAdapter(max_retries=max_retries))
             session.mount("https://", requests.adapters.HTTPAdapter(max_retries=max_retries))
+            logger.debug("Sending request url => %s with params => %s", url, params)
             response = session.get(url=url, timeout=timeout_seconds, params=params)
         except requests.exceptions.ConnectionError:
             logger.exception("ConnectionError: A connection error occurred")
@@ -73,7 +77,7 @@ def send_request(url, **params):
     # Ensure datetime objects may be decoded
     payload = response.json(object_hook=jjson.custom_deserializer)
 
-    if logger.isEnabledFor(logging.DEBUG):
+    if ApiConfig.Debug and logger.isEnabledFor(logging.DEBUG):
         data = toolbelt.dump_response(response)
         data = data.decode("utf-8").strip().replace("\r\n", "\n")
         boundary = "\n> \n"
@@ -252,8 +256,69 @@ class Artist(BaseApiObject):
         return self._events
 
     @staticmethod
-    def load(artist_id, name):
-        data = send_request("/artists/{}".format(name), artist_id=artist_id)
+    def _clean_slug(val):
+        if val and isinstance(val, six.string_types):
+            val = val.replace(" ", "")
+        return val
+
+    @staticmethod
+    def _extract_meta(content):
+        """
+        Extract the actual identifier from loading the corresponding bandsintown page
+
+        Yes this is a hack, but there's really no other way to do this....
+        :param content: The html to parse
+        :return: The bandsintown artist id
+        """
+        identifier = None
+        soup = bs4.BeautifulSoup(content, "html.parser")
+        # Extract the artist id from the meta tags
+        for attr in soup.find_all("meta"):
+            content_url = attr.get("content")
+            if content_url.startswith("bitcon://") or content_url.startswith("bitintent://"):
+                content_url_parsed = urlparse.urlparse(content_url)
+                if content_url_parsed and content_url_parsed.query:
+                    query_data = urlparse.parse_qs(content_url_parsed.query)
+                    if "artist" in query_data or "artist_name" in query_data:
+                        # Found it
+                        identifier = query_data.get("artist", query_data.get("artist_name"))
+                        if isinstance(identifier, list):
+                            identifier = identifier[0]
+                            # We also need to unquote this value (i.e. it's url encoded)
+                            identifier = urlparse.unquote(identifier)
+                        break
+        return identifier
+
+    _url_pattern = r"^(?:https?://)?(?:www\.)?bandsintown\.com/(?P<slug>[^/]+).*$"
+    _url_regex = re.compile(_url_pattern, re.UNICODE | re.IGNORECASE)
+
+    @staticmethod
+    def get_identifier(url_or_slug):
+        match = Artist._url_regex.match(url_or_slug)
+        if match:
+            groups = match.groupdict()
+            slug = Artist._clean_slug(groups.get("slug"))
+        else:
+            slug = url_or_slug
+
+        slug = Artist._clean_slug(slug)
+
+        url = "http://bandsintown.com/{}".format(slug)
+        response = polite_request(url)
+        identifier = Artist._extract_meta(response.content)
+
+        if not identifier:
+            raise ValueError("Could not extract identifer from %s", url)
+
+        return identifier, slug
+
+    @staticmethod
+    def load(artist_id, slug=None):
+        if not slug:
+            slug = Artist._clean_slug(artist_id)
+
+        data = send_request("/artists/{}".format(slug), artist_id=artist_id)
         data["artist_id"] = artist_id
+        data["slug"] = slug
         data["upcoming_events_count"] = data.get("upcoming_events_count") or 0
         return Artist(**data)
