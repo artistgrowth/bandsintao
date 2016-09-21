@@ -5,7 +5,6 @@ import collections
 import datetime
 import logging
 import unittest
-import datetime
 
 from requests import HTTPError
 

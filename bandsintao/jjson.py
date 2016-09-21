@@ -6,7 +6,6 @@ import decimal
 import json
 import logging
 import re
-import types
 
 import dateutil.parser
 import pytz
@@ -50,7 +49,7 @@ def _get_iso_regex():
     _hour_pattern = r"(?P<hour>([0-1][0-9])|(2[0-3]))"
     _second_pattern = r"(?P<second>[0-5][0-9])"
     _microsecond_pattern = r"(?P<microsecond>\.[0-9]{1,6})?"
-    _tz_pattern = r"(?P<tz>Z|({offsets}))?".format(offsets=_valid_offsets())
+    _tz_pattern = r"(?P<tz>Z?|({offsets}))?".format(offsets=_valid_offsets())
     _time_pattern = r"{hour}:{minute}:{second}{microsecond}{tz}".format(
         hour=_hour_pattern,
         minute=_minute_pattern,
@@ -65,7 +64,7 @@ def _get_iso_regex():
 _iso_8601_datetime_regex = _get_iso_regex()
 
 
-def _custom_deserializer(decoded_json_object):
+def custom_deserializer(decoded_json_object):
     """
     This is a hook to provide custom deserialization functionality to json
     :param decoded_json_object: An object that has already had the default deserialization performed on it
@@ -81,7 +80,7 @@ def _custom_deserializer(decoded_json_object):
     result = []
     # Iterate through the decoded values and convert any custom types we find
     for key, value in pairs:
-        if isinstance(value, types.StringTypes):
+        if isinstance(value, six.string_types):
             # Attempt to convert string types that match a datetime patterns
             if _iso_8601_datetime_regex.match(value):
                 length = len(value)
@@ -96,7 +95,7 @@ def _custom_deserializer(decoded_json_object):
 
         elif isinstance(value, (dict, list)):
             # Recursively dive into the object and convert the values found
-            value = _custom_deserializer(value)
+            value = custom_deserializer(value)
 
         # Append our results for a final processing
         result.append((key, value))
@@ -163,4 +162,4 @@ def dumps(obj, sort_keys=False, indent=None, separators=None):
 
 def loads(s):
     """Deserialize ``s`` (a ``str`` or ``unicode`` instance containing a JSON document) to a Python object."""
-    return json.loads(s, object_hook=_custom_deserializer)
+    return json.loads(s, object_hook=custom_deserializer)
