@@ -44,8 +44,6 @@ def polite_request(url, timeout_seconds=30, max_retries=5, **params):
             session.mount("http://", requests.adapters.HTTPAdapter(max_retries=max_retries))
             session.mount("https://", requests.adapters.HTTPAdapter(max_retries=max_retries))
             response = session.get(url=url, timeout=timeout_seconds, params=params)
-            # Patch requests so the built-in json will convert dates if parsed
-            response.json.im_func.func_globals["complexjson"] = jjson
         except requests.exceptions.ConnectionError:
             logger.exception("ConnectionError: A connection error occurred")
         except requests.exceptions.Timeout:
@@ -71,7 +69,9 @@ def send_request(url, **params):
     params.update(defaults)
     resolved_url = urlparse.urljoin(ApiConfig.BaseUri, url)
     response = polite_request(resolved_url, **params)
-    payload = response.json()
+
+    # Ensure datetime objects may be decoded
+    payload = response.json(object_hook=jjson.custom_deserializer)
 
     if logger.isEnabledFor(logging.DEBUG):
         data = toolbelt.dump_response(response)
