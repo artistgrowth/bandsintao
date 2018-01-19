@@ -75,6 +75,7 @@ class ArtistTestCase(unittest.TestCase):
             # Requests can handles the encoding
             content = _load_test_file_raw("artist.html", dir_name=os.path.join("data", entity.slug), encoding=None)
             response._content = content
+            response.status_code = requests.codes.ok
             mocked_request.return_value = response
             if slug_only:
                 url_or_slug = entity.slug

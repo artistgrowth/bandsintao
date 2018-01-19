@@ -262,19 +262,23 @@ class Artist(BaseApiObject):
         return val
 
     @staticmethod
-    def _extract_meta(content):
+    def _extract_meta(response):
         """
         Extract the actual identifier from loading the corresponding bandsintown page
 
         Yes this is a hack, but there's really no other way to do this....
-        :param content: The html to parse
+        :param response: The http response
         :return: The bandsintown artist id
         """
         identifier = None
-        soup = bs4.BeautifulSoup(content, "html.parser")
+        if response.status_code != requests.codes.ok:
+            logger.debug("Unable to extract identifier, status code %s", response.status_code)
+            return identifier
+
+        soup = bs4.BeautifulSoup(response.content, "html.parser")
         # Extract the artist id from the meta tags
         for attr in soup.find_all("meta"):
-            content_url = attr.get("content")
+            content_url = attr.get("content", "")
             if content_url.startswith("bitcon://") or content_url.startswith("bitintent://"):
                 content_url_parsed = urlparse.urlparse(content_url)
                 if content_url_parsed and content_url_parsed.query:
@@ -289,23 +293,28 @@ class Artist(BaseApiObject):
                         break
         return identifier
 
-    _url_pattern = r"^(?:https?://)?(?:www\.)?bandsintown\.com/(?P<slug>[^/]+).*$"
+    _url_pattern_domain = "(?:https?://)?(?:(?:www\.)?bandsintown\.com)?/"
+    _url_pattern_numslug = "(?:{}a/(?P<numslug>\\d+).*)".format(_url_pattern_domain)
+    _url_pattern_slug = "(?:{}(?P<slug>[^/]+).*)".format(_url_pattern_domain)
+    _url_pattern = r"^{}$".format("|".join((_url_pattern_numslug, _url_pattern_slug)))
     _url_regex = re.compile(_url_pattern, re.UNICODE | re.IGNORECASE)
 
     @staticmethod
-    def get_identifier(url_or_slug):
-        match = Artist._url_regex.match(url_or_slug)
+    def get_identifier(url_or_slug_or_id):
+        match = Artist._url_regex.match(url_or_slug_or_id)
         if match:
             groups = match.groupdict()
-            slug = Artist._clean_slug(groups.get("slug"))
+            slug = groups.get("numslug") or groups.get("slug")
+            slug = Artist._clean_slug(slug)
         else:
-            slug = url_or_slug
+            slug = url_or_slug_or_id
 
-        slug = Artist._clean_slug(slug)
-
+        if re.match(r"\d+", slug):
+            slug = "a/{}".format(slug)
         url = "http://bandsintown.com/{}".format(slug)
         response = polite_request(url)
-        identifier = Artist._extract_meta(response.content)
+        identifier = Artist._extract_meta(response)
+        slug = Artist._clean_slug(identifier)
 
         if not identifier:
             raise ValueError("Could not extract identifer from %s", url)
