@@ -8,6 +8,7 @@ import re
 import socket
 import urlparse
 
+# noinspection PyPackageRequirements
 import bs4
 import requests
 import requests.adapters
@@ -258,7 +259,7 @@ class Artist(BaseApiObject):
     @staticmethod
     def _clean_slug(val):
         if val and isinstance(val, six.string_types):
-            val = val.replace(" ", "")
+            val = re.sub(" ", "", val, flags=re.UNICODE)
         return val
 
     @staticmethod
@@ -280,6 +281,8 @@ class Artist(BaseApiObject):
         for attr in soup.find_all("meta"):
             content_url = attr.get("content", "")
             if content_url.startswith("bitcon://") or content_url.startswith("bitintent://"):
+                # Url encoding uses ASCII codepoints only - make sure we don't pass something in UTF-8
+                content_url = content_url.encode("ASCII")
                 content_url_parsed = urlparse.urlparse(content_url)
                 if content_url_parsed and content_url_parsed.query:
                     query_data = urlparse.parse_qs(content_url_parsed.query)
@@ -290,7 +293,13 @@ class Artist(BaseApiObject):
                             identifier = identifier[0]
                             # We also need to unquote this value (i.e. it's url encoded)
                             identifier = urlparse.unquote(identifier)
+                        else:
+                            raise ValueError("Invalid condition - identifer could not be ... identified")
                         break
+
+        if identifier is not None and isinstance(identifier, six.string_types):
+            identifier = identifier.decode("utf-8")
+
         return identifier
 
     _url_pattern_domain = "(?:https?://)?(?:(?:www\.)?bandsintown\.com)?/"
