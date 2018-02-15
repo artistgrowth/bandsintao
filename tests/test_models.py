@@ -57,12 +57,55 @@ class ArtistId(collections.namedtuple("ArtistId", ("artist_id", "slug", "music_b
         return ArtistId(data.get("name"), slug, data.get("mbid"), None)
 
 
-lil_wayne = ArtistId.load_from_slug("LilWayne")
-skrillex = ArtistId.load_from_slug("Skrillex")
-metallica = ArtistId.load_from_slug("Metallica")
-rhcp = ArtistId.load_from_slug("RedHotChiliPeppers")
-kings_of_leon = ArtistId.load_from_slug("KingsofLeon")
-ty_dolla = ArtistId.load_from_slug("TyDolla$ign")
+class lazy_property(object):
+    '''
+    meant to be used for lazy evaluation of an object attribute.
+    property should represent non-mutable data, as it replaces itself.
+    '''
+
+    def __init__(self, fget):
+        self.fget = fget
+        self.func_name = fget.__name__
+
+    def __get__(self, obj, cls):
+        if obj is None:
+            return None
+        value = self.fget(obj)
+        setattr(obj, self.func_name, value)
+        return value
+
+
+class ArtistData(object):
+    @lazy_property
+    def lil_wayne(self):
+        return ArtistId.load_from_slug("LilWayne")
+
+    @lazy_property
+    def skrillex(self):
+        return ArtistId.load_from_slug("Skrillex")
+
+    @lazy_property
+    def metallica(self):
+        return ArtistId.load_from_slug("Metallica")
+
+    @lazy_property
+    def rhcp(self):
+        return ArtistId.load_from_slug("RedHotChiliPeppers")
+
+    @lazy_property
+    def kings_of_leon(self):
+        return ArtistId.load_from_slug("KingsofLeon")
+
+    @lazy_property
+    def ty_dolla(self):
+        return ArtistId.load_from_slug("TyDolla$ign")
+
+    @lazy_property
+    def ti3sto(self):
+        return ArtistId.load_from_slug("Tiësto")
+
+
+_data = ArtistData()
 
 
 class ArtistTestCase(unittest.TestCase):
@@ -84,18 +127,30 @@ class ArtistTestCase(unittest.TestCase):
             identifier, slug = Artist.get_identifier(url_or_slug)
             self.assertEqual(slug, entity.slug)
             self.assertEqual(identifier, entity.artist_id)
+            return identifier, slug
 
     def test_get_identifier(self):
-        self._test_get_identifier(rhcp)
+        self._test_get_identifier(_data.rhcp)
 
     def test_get_identifier_only_slug(self):
-        self._test_get_identifier(kings_of_leon, True)
+        self._test_get_identifier(_data.kings_of_leon, True)
 
     def test_get_identifier_special_characters_only_slug(self):
-        self._test_get_identifier(ty_dolla, True)
+        self._test_get_identifier(_data.ty_dolla, True)
 
     def test_get_identifier_special_characters(self):
-        self._test_get_identifier(ty_dolla, False)
+        self._test_get_identifier(_data.ty_dolla, False)
+
+    def test_testio(self):
+        """
+        Ensure these types of URLs work:
+
+            https://www.bandsintown.com/a/30843-tiesto
+            https://www.bandsintown.com/a/30843
+
+        :return:
+        """
+        self._test_get_identifier(_data.ti3sto, True)
 
 
 class TestCaseBase(unittest.TestCase):
@@ -132,15 +187,15 @@ class GeneralTestCase(TestCaseBase):
 
     def test_get_without_app_id(self):
         with self.assertRaises(HTTPError):
-            Artist.load(slug=lil_wayne.artist_id, artist_id=lil_wayne.facebook_id)
+            Artist.load(slug=_data.lil_wayne.artist_id, artist_id=_data.lil_wayne.facebook_id)
 
     def test_get(self):
         ApiConfig.init(app_id="testing")
-        self._make_request(lil_wayne)
+        self._make_request(_data.lil_wayne)
 
     def test_events(self):
         ApiConfig.init(app_id="testing")
-        obj = self._make_request(skrillex)
+        obj = self._make_request(_data.skrillex)
         self.assertIsNotNone(obj)
         self.assertIsNotNone(obj.events)
 
@@ -150,7 +205,7 @@ class LocationTestCase(TestCaseBase):
 
     def test_event(self):
         ApiConfig.init(app_id="testing")
-        entity = skrillex
+        entity = _data.skrillex
 
         obj = self._make_request(entity)
         self.assertIsNotNone(obj)
