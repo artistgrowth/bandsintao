@@ -7,6 +7,7 @@ import datetime
 import logging
 import os
 import unittest
+import inspect
 
 import mock
 import requests
@@ -58,10 +59,10 @@ class ArtistId(collections.namedtuple("ArtistId", ("artist_id", "slug", "music_b
 
 
 class lazy_property(object):
-    '''
-    meant to be used for lazy evaluation of an object attribute.
+    """
+    Meant to be used for lazy evaluation of an object attribute.
     property should represent non-mutable data, as it replaces itself.
-    '''
+    """
 
     def __init__(self, fget):
         self.fget = fget
@@ -104,6 +105,10 @@ class ArtistData(object):
     def ti3sto(self):
         return ArtistId.load_from_slug("Tiësto")
 
+    @lazy_property
+    def judah_and_the_lion(self):
+        return ArtistId.load_from_slug("Judah&TheLion")
+
 
 _data = ArtistData()
 
@@ -116,14 +121,14 @@ class ArtistTestCase(unittest.TestCase):
             # Retain everything else from the Response object
             response = requests.models.Response()
             # Requests can handles the encoding
-            content = _load_test_file_raw("artist.html", dir_name=os.path.join("data", entity.slug), encoding=None)
+            content = _load_test_file_raw("artist.html", dir_name=os.path.join("data", entity.slug))
             response._content = content
             response.status_code = requests.codes.ok
             mocked_request.return_value = response
             if slug_only:
                 url_or_slug = entity.slug
             else:
-                url_or_slug = "http://www.bandsintown.com/{}".format(entity.slug)
+                url_or_slug = "https://www.bandsintown.com/{}".format(entity.slug)
             identifier, slug = Artist.get_identifier(url_or_slug)
             self.assertEqual(slug, entity.slug)
             self.assertEqual(identifier, entity.artist_id)
@@ -131,6 +136,7 @@ class ArtistTestCase(unittest.TestCase):
 
     def test_get_identifier(self):
         self._test_get_identifier(_data.rhcp)
+        self._test_get_identifier(_data.judah_and_the_lion)
 
     def test_get_identifier_only_slug(self):
         self._test_get_identifier(_data.kings_of_leon, True)
@@ -151,6 +157,9 @@ class ArtistTestCase(unittest.TestCase):
         :return:
         """
         self._test_get_identifier(_data.ti3sto, True)
+
+    def test_get_identifier_with_ampersands(self):
+        self._test_get_identifier(_data.judah_and_the_lion)
 
 
 class TestCaseBase(unittest.TestCase):
@@ -192,12 +201,21 @@ class GeneralTestCase(TestCaseBase):
     def test_get(self):
         ApiConfig.init(app_id="testing")
         self._make_request(_data.lil_wayne)
+        self._make_request(_data.judah_and_the_lion)
 
     def test_events(self):
         ApiConfig.init(app_id="testing")
         obj = self._make_request(_data.skrillex)
         self.assertIsNotNone(obj)
         self.assertIsNotNone(obj.events)
+
+    def test_events2(self):
+        ApiConfig.init(app_id="testing")
+        for name, artist_id in inspect.getmembers(_data, lambda __: isinstance(__, ArtistId)):
+            obj = self._make_request(artist_id)
+            self.assertIsNotNone(obj)
+            self.assertIsNotNone(obj.events)
+            self.assertEqual(obj["mbid"], artist_id.music_brainz_id)
 
 
 class LocationTestCase(TestCaseBase):

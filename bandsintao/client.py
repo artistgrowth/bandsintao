@@ -231,7 +231,7 @@ class Artist(BaseApiObject):
     Contains information about one artists. Also methods for getting
     information about one artist or all events for an artist
 
-    http://www.bandsintown.com/api/responses#artist-json
+    https://www.bandsintown.com/api/responses#artist-json
 
     Artist JSON format:
     {
@@ -277,27 +277,35 @@ class Artist(BaseApiObject):
             return identifier
 
         soup = bs4.BeautifulSoup(response.content, "html.parser")
-        # Extract the artist id from the meta tags
-        for attr in soup.find_all("meta"):
-            content_url = attr.get("content", "")
-            if content_url.startswith("bitcon://") or content_url.startswith("bitintent://"):
-                # Url encoding uses ASCII codepoints only - make sure we don't pass something in UTF-8
-                content_url = content_url.encode("ASCII")
-                content_url_parsed = urlparse.urlparse(content_url)
-                if content_url_parsed and content_url_parsed.query:
-                    query_data = urlparse.parse_qs(content_url_parsed.query)
-                    if "artist" in query_data or "artist_name" in query_data:
-                        # Found it
-                        identifier = query_data.get("artist", query_data.get("artist_name"))
-                        if isinstance(identifier, list):
-                            identifier = identifier[0]
-                            # We also need to unquote this value (i.e. it's url encoded)
-                            identifier = urlparse.unquote(identifier)
-                        else:
-                            raise ValueError("Invalid condition - identifer could not be ... identified")
-                        break
 
-        if identifier is not None and isinstance(identifier, six.string_types):
+        # Prefer the <meta property="og:title"> tag first, this helps to minimize encoding/decoding issues
+        # We do this first because Bandsintown is not properly encoding artist names with ampersands
+        element = soup.find("meta", attrs={"property": "og:title"})
+        if element:
+            identifier = element.get("content", "")
+
+        # Fallback and attempt to extract the artist id from one of the meta tags
+        if not element or not identifier:
+            for meta in soup.find_all("meta"):
+                content_attr = meta.get("content", "")
+                if content_attr.startswith("bitcon://") or content_attr.startswith("bitintent://"):
+                    # Url encoding uses ASCII codepoints only - make sure we don't pass something in UTF-8
+                    content_attr = content_attr.encode("ASCII")
+                    content_url_parsed = urlparse.urlparse(content_attr)
+                    if content_url_parsed and content_url_parsed.query:
+                        query_data = urlparse.parse_qs(content_url_parsed.query)
+                        if "artist" in query_data or "artist_name" in query_data:
+                            # Found it
+                            identifier = query_data.get("artist", query_data.get("artist_name"))
+                            if isinstance(identifier, list):
+                                identifier = identifier[0]
+                                # We also need to unquote this value (i.e. it's url encoded)
+                                identifier = urlparse.unquote(identifier)
+                            else:
+                                raise ValueError("Invalid condition - identifer could not be ... identified")
+                            break
+
+        if identifier is not None and isinstance(identifier, six.binary_type):
             identifier = identifier.decode("utf-8")
 
         return identifier
@@ -320,7 +328,7 @@ class Artist(BaseApiObject):
 
         if re.match(r"\d+", slug):
             slug = "a/{}".format(slug)
-        url = "http://bandsintown.com/{}".format(slug)
+        url = "https://www.bandsintown.com/{}".format(slug)
         response = polite_request(url)
         identifier = Artist._extract_meta(response)
         slug = Artist._clean_slug(identifier)
