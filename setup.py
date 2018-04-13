@@ -8,7 +8,11 @@ NAME = "bandsintao"
 
 
 def requirements(filename):
-    from pip.req import parse_requirements
+    try:
+        from pip.req import parse_requirements
+    except ImportError:
+        # Handle newer versions of pip >= 10, they moved this function completely
+        from pip._internal.req import parse_requirements
     requirement_file = os.path.join(os.getcwd(), "requirements", filename)
     # Each object returned from `parse_requirements` will have a `Requirment` property
     # whose string representation will be in the format needed to articulate requirements within
