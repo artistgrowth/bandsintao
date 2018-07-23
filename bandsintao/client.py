@@ -22,9 +22,9 @@ logger = logging.getLogger(__name__)
 
 class ApiConfig(object):
     AppId = None
-    Version = "2.0"
+    Version = "3.0"
     Format = "json"
-    BaseUri = "https://api.bandsintown.com"
+    BaseUri = "https://rest.bandsintown.com"
     Debug = False
 
     @staticmethod
