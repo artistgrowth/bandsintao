@@ -129,12 +129,12 @@ class Venue(BaseApiObject):
     """
         Venue JSON Format
         [{
-            "city": "Lovelaceville",
-            "name": "SBT Ranch",
-            "country": "United States",
-            "region": "KY",
-            "longitude": "-88.8308333",
-            "latitude": "36.9686111"
+            "name": "Curacao North Sea Jazz Festival",
+            "city": "Willemstad",
+            "region": "",
+            "country": "Netherlands",
+            "latitude": "51.7",
+            "longitude": "4.4333333"
         }]
     """
     pass
@@ -147,31 +147,29 @@ class Event(BaseApiObject):
 
     Event JSON format:
     [{
-        "id": 4189861,
-        "title": "Nas @ UB Stadium in Buffalo, NY",
-        "datetime": "2011-04-29T19:00:00",
-        "formatted_datetime": "Friday, April 29, 2011 at 7:00pm",
-        "formatted_location": "Buffalo, NY",
-        "ticket_url": "http://www.bandsintown.com/event/4189861/buy_tickets?artist=Nas",
-        "ticket_type": "Tickets",
-        "ticket_status": "available",
-        "on_sale_datetime": "2011-03-08T10:00:00",
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/4189861?artist=Nas",
-        "description": "2011 Block Party: featuring Kid Cudi, Damian Marley, Nas & Spec. Guest",
-        "artists": [{
-            "name": "Nas",
-            "mbid": "cfbc0924-0035-4d6c-8197-f024653af823",
-            "image_url": "http://www.bandsintown.com/Nas/photo/medium.jpg",
-            "thumb_url": "http://www.bandsintown.com/Nas/photo/small.jpg",
-            "facebook_tour_dates_url": "http://bnds.in/e5CP5L"
-        }],
+        "id": "1009274195",
+        "artist_id": "409",
+        "datetime": "2018-08-31T19:00:00",
+        "description": "",
+        "on_sale_datetime": "",
+        "url": "https:\/\/www.bandsintown.com\/e\/1009274195?app_id=artistgrowth-dev&came_from=267",
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1009274195?app_id=YOUR_APP_ID&came_from=267",
+                "status": "available"
+            }
+        ],
+        "lineup": [
+            "Damian Marley"
+        ],
         "venue": {
-            "name": "UB Stadium",
-            "city": "Buffalo",
-            "region": "NY",
-            "country": "United States",
-            "latitude": 43.0004710,
-            "longitude" : -78.7802170
+            "name": "Curacao North Sea Jazz Festival",
+            "city": "Willemstad",
+            "region": "",
+            "country": "Netherlands",
+            "latitude": "51.7",
+            "longitude": "4.4333333"
         }
     }]
     """
@@ -179,15 +177,13 @@ class Event(BaseApiObject):
     @staticmethod
     def parse(data):
         event = Event(**data)
-        event.artists = [Artist(**__) for __ in data.get("artists", []) if __]
+        event.artists = ArtistLoader(data.get("lineup", []))
         event.venue = Venue(**data.get("venue", {}))
         return event
 
     @staticmethod
     def parse_all(data):
-        events = []
-        for event in data:
-            events.append(Event.parse(event))
+        events = [Event.parse(event) for event in data]
         return events
 
     @staticmethod
@@ -234,13 +230,17 @@ class Artist(BaseApiObject):
     https://www.bandsintown.com/api/responses#artist-json
 
     Artist JSON format:
+    "tracker_count": 453885, "upcoming_event_count": 16}
     {
+        "id": "409",
         "name": "Damian Marley",
-        "image_url": "http://www.bandsintown.com/DamianMarley/photo/medium.jpg",
-        "thumb_url": "http://www.bandsintown.com/DamianMarley/photo/small.jpg",
-        "facebook_tour_dates_url": "http://bnds.in/jrHVeT",
+        "image_url": "https://s3.amazonaws.com/bit-photos/large/8667699.jpeg",
+        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8667699.jpeg",
+        "url": "https://www.bandsintown.com/a/409?came_from=267&app_id=YOUR_APP_ID",
+        "facebook_page_url": "https://www.facebook.com/damianmarley",
         "mbid": "cbfb9bcd-c5a0-4d7c-865f-2c641c171e1c",
-        "upcoming_events_count": 7
+        "upcoming_event_count": 16,
+        "tracker_count": 453885
     }
     """
 
@@ -346,5 +346,37 @@ class Artist(BaseApiObject):
         data = send_request("/artists/{}".format(slug), artist_id=artist_id)
         data["artist_id"] = artist_id
         data["slug"] = slug
-        data["upcoming_events_count"] = data.get("upcoming_events_count") or 0
+        data["upcoming_event_count"] = data.get("upcoming_event_count", 0)
         return Artist(**data)
+
+
+class LazyLoader(object):
+    loader_klass = None
+
+    def __init__(self, initial_data):
+        if self.loader_klass is None:
+            raise ValueError("You need to set the loader_klass")
+
+        self._data = initial_data
+
+    def __len__(self):
+        return len(self._data)
+
+    def __getitem__(self, item):
+        return self._load(item)
+
+    def __iter__(self):
+        for i in xrange(len(self)):
+            return self._load(i)
+
+    def _load(self, i):
+        item = self._data[i]
+        if not isinstance(item, self.loader_klass):
+            item = self.loader_klass.load(item)
+            self._data[i] = item
+
+        return item
+
+
+class ArtistLoader(LazyLoader):
+    loader_klass = Artist
