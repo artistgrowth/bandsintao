@@ -4,3 +4,4 @@ six>=1.9.0,<2.0
 python-dateutil>=2.4.2,<3.0
 pytz
 beautifulsoup4==4.5.1
+iso-639==0.4.5
