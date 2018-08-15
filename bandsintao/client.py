@@ -10,6 +10,7 @@ import urlparse
 
 # noinspection PyPackageRequirements
 import bs4
+import iso639
 import requests
 import requests.adapters
 import requests_toolbelt.utils.dump as toolbelt
@@ -311,7 +312,8 @@ class Artist(BaseApiObject):
         return identifier
 
     _url_pattern_domain = "(?:https?://)?(?:(?:www\.)?bandsintown\.com)?/"
-    _url_pattern_numslug = "(?:{}a/(?P<numslug>\\d+).*)".format(_url_pattern_domain)
+    _url_languages = "(?:(?:{})/)?".format("|".join(iso639.languages.part1.keys()))
+    _url_pattern_numslug = "(?:{}{}a/(?P<numslug>\\d+).*)".format(_url_pattern_domain, _url_languages)
     _url_pattern_slug = "(?:{}(?P<slug>[^/]+).*)".format(_url_pattern_domain)
     _url_pattern = r"^{}$".format("|".join((_url_pattern_numslug, _url_pattern_slug)))
     _url_regex = re.compile(_url_pattern, re.UNICODE | re.IGNORECASE)
