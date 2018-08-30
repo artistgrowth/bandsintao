@@ -66,7 +66,7 @@ def polite_request(url, timeout_seconds=30, max_retries=5, **params):
     return response
 
 
-def send_request(url, **params):
+def send_request(url, expected_type, **params):
     defaults = {
         "api_version": ApiConfig.Version,
         "app_id": ApiConfig.AppId,
@@ -89,8 +89,9 @@ def send_request(url, **params):
         raw = jjson.loads(raw)
         logger.debug("\n%s\n%s\n", data, jjson.dumps(raw, sort_keys=True, indent=4))
 
-    if response.status_code != requests.codes.ok:
-        response.raise_for_status()
+    response.raise_for_status()
+    if not isinstance(payload, expected_type) or "error" in payload:
+        raise ValueError("Error loading {} with params {}".format(url, vars(params)))
 
     return payload
 
@@ -179,7 +180,8 @@ class Event(BaseApiObject):
     def parse(data):
         event = Event(**data)
         event.artists = ArtistLoader(data.get("lineup", []))
-        event.venue = Venue(**data.get("venue", {}))
+        venue = data.get("venue")
+        event.venue = Venue(**venue) if venue else None
         return event
 
     @staticmethod
@@ -210,17 +212,17 @@ class Event(BaseApiObject):
     @staticmethod
     def search(artist_id=None, location=None, radius=None, date=None, page=None, per_page=None):
         params = Event._generate_params(**locals())
-        return Event.parse_all(send_request("/events/search", **params))
+        return Event.parse_all(send_request("/events/search", list, **params))
 
     @staticmethod
     def recommended(artist_id=None, location=None, radius=None, date=None, only_recs=None, page=None, per_page=None):
         only_recs = only_recs and "true" or "false"
         params = Event._generate_params(**locals())
-        return Event.parse_all(send_request("/events/recommended", **params))
+        return Event.parse_all(send_request("/events/recommended", list, **params))
 
     @staticmethod
     def daily():
-        return Event.parse_all(send_request("/events/daily"))
+        return Event.parse_all(send_request("/events/daily", list))
 
 
 class Artist(BaseApiObject):
@@ -252,7 +254,7 @@ class Artist(BaseApiObject):
     @property
     def events(self):
         if not self._events:
-            data = send_request("/artists/{}/events".format(self.name), artist_id=self.artist_id)
+            data = send_request("/artists/{}/events".format(self.name), list, artist_id=self.artist_id)
             self._events = Event.parse_all(data)
 
         return self._events
@@ -260,7 +262,13 @@ class Artist(BaseApiObject):
     @staticmethod
     def _clean_slug(val):
         if val and isinstance(val, six.string_types):
-            val = re.sub(" ", "", val, flags=re.UNICODE)
+            for find, replace in [
+                ("/", "%252F"),
+                ("?", "%253F"),
+                ("*", "%252A"),
+                ("\"", "%27C"),
+            ]:
+                val = val.replace(find, replace)
         return val
 
     @staticmethod
@@ -311,11 +319,11 @@ class Artist(BaseApiObject):
 
         return identifier
 
-    _url_pattern_domain = "(?:https?://)?(?:(?:www\.)?bandsintown\.com)?/"
     _url_languages = "(?:(?:{})/)?".format("|".join(iso639.languages.part1.keys()))
-    _url_pattern_numslug = "(?:{}{}a/(?P<numslug>\\d+).*)".format(_url_pattern_domain, _url_languages)
-    _url_pattern_slug = "(?:{}(?P<slug>[^/]+).*)".format(_url_pattern_domain)
-    _url_pattern = r"^{}$".format("|".join((_url_pattern_numslug, _url_pattern_slug)))
+    _url_pattern_domain = "(?:https?://)?(?:(?:www\.)?bandsintown\.com)?/{}".format(_url_languages)
+    _url_pattern_numslug = "(?:a/(?P<numslug>\\d+).*)"
+    _url_pattern_slug = "(?:(?P<slug>[^/]+).*)"
+    _url_pattern = r"^{}(?:{})$".format(_url_pattern_domain, "|".join((_url_pattern_numslug, _url_pattern_slug)))
     _url_regex = re.compile(_url_pattern, re.UNICODE | re.IGNORECASE)
 
     @staticmethod
@@ -341,11 +349,27 @@ class Artist(BaseApiObject):
         return identifier, slug
 
     @staticmethod
-    def load(artist_id, slug=None):
+    def load(artist_id, slug=None, verify_id=None):
+        """
+        Load the artist payload into a helper object for consumption
+
+        You can pass the expected payload "id" into here for validation of artist payload returned,
+        which is the numerical part of a /a/12345 url
+        :param artist_id:
+        :param slug:
+        :param verify_id:
+        :return:
+        """
         if not slug:
             slug = Artist._clean_slug(artist_id)
 
-        data = send_request("/artists/{}".format(slug), artist_id=artist_id)
+        data = send_request("/artists/{}".format(slug), dict, artist_id=artist_id)
+
+        if isinstance(verify_id, int):
+            verify_id = six.text_type(verify_id)
+        if isinstance(verify_id, six.string_types) and data["id"] != verify_id:
+            raise ValueError("Wrong artist payload was returned, somehow")
+
         data["artist_id"] = artist_id
         data["slug"] = slug
         data["upcoming_event_count"] = data.get("upcoming_event_count", 0)
