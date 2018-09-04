@@ -79,7 +79,7 @@ class lazy_property(object):
 class ArtistData(object):
     @lazy_property
     def lil_wayne(self):
-        return ArtistId.load_from_slug("LilWayne")
+        return ArtistId.load_from_slug("Lil Wayne")
 
     @lazy_property
     def skrillex(self):
@@ -91,15 +91,15 @@ class ArtistData(object):
 
     @lazy_property
     def rhcp(self):
-        return ArtistId.load_from_slug("RedHotChiliPeppers")
+        return ArtistId.load_from_slug("Red Hot Chili Peppers")
 
     @lazy_property
     def kings_of_leon(self):
-        return ArtistId.load_from_slug("KingsofLeon")
+        return ArtistId.load_from_slug("Kings of Leon")
 
     @lazy_property
     def ty_dolla(self):
-        return ArtistId.load_from_slug("TyDolla$ign")
+        return ArtistId.load_from_slug("Ty Dolla $ign")
 
     @lazy_property
     def ti3sto(self):
@@ -107,7 +107,7 @@ class ArtistData(object):
 
     @lazy_property
     def judah_and_the_lion(self):
-        return ArtistId.load_from_slug("Judah&TheLion")
+        return ArtistId.load_from_slug("Judah & The Lion")
 
 
 _data = ArtistData()
