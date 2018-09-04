@@ -1,1560 +1,184 @@
 [
-  {
-    "id": 16507853,
-    "artist_id": 30843,
-    "artist_event_id": 21296549,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-02-17T22:00:00",
-    "formatted_datetime": "Saturday, February 17, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16507853/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16507853?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
+    {
+        "id": "1006650729",
+        "artist_id": "30843",
+        "url": "https:\/\/www.bandsintown.com\/e\/1006650729?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-09-08T22:00:28",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Las Vegas",
+            "latitude": "36.1022507",
+            "name": "Hakkasan Las Vegas Nightclub",
+            "region": "NV",
+            "longitude": "-115.1699679"
+        },
+        "lineup": [
+            "Tiësto"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1006650729?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1006650741",
+        "artist_id": "30843",
+        "url": "https:\/\/www.bandsintown.com\/e\/1006650741?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-09-15T22:00:39",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Las Vegas",
+            "latitude": "36.1022507",
+            "name": "Hakkasan Las Vegas Nightclub",
+            "region": "NV",
+            "longitude": "-115.1699679"
+        },
+        "lineup": [
+            "Tiësto"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1006650741?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007875741",
+        "artist_id": "30843",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007875741?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-09-16T11:00:38",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Las Vegas",
+            "latitude": "36.101678",
+            "name": "Wet Republic Ultra Pool",
+            "region": "NV",
+            "longitude": "-115.168617"
+        },
+        "lineup": [
+            "Tiësto"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007875741?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1006650752",
+        "artist_id": "30843",
+        "url": "https:\/\/www.bandsintown.com\/e\/1006650752?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-09-27T22:00:43",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Las Vegas",
+            "latitude": "36.1022507",
+            "name": "Hakkasan Las Vegas Nightclub",
+            "region": "NV",
+            "longitude": "-115.1699679"
+        },
+        "lineup": [
+            "Tiësto"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1006650752?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1006650761",
+        "artist_id": "30843",
+        "url": "https:\/\/www.bandsintown.com\/e\/1006650761?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-09-29T22:00:06",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Las Vegas",
+            "latitude": "36.1022507",
+            "name": "Hakkasan Las Vegas Nightclub",
+            "region": "NV",
+            "longitude": "-115.1699679"
+        },
+        "lineup": [
+            "Tiësto"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1006650761?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "100106249",
+        "artist_id": "30843",
+        "url": "https:\/\/www.bandsintown.com\/e\/100106249?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-11-10T19:00:26",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Orlando",
+            "latitude": "28.5383355",
+            "name": "Electric Daisy Carnival",
+            "region": "FL",
+            "longitude": "-81.3792365"
+        },
+        "lineup": [
+            "Tiesto"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/100106249?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "100248302",
+        "artist_id": "30843",
+        "url": "https:\/\/www.bandsintown.com\/e\/100248302?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-12-28T14:15:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Dallas",
+            "latitude": "32.7891591",
+            "name": "Dallas Market Hall",
+            "region": "TX",
+            "longitude": "-96.82170169999999"
+        },
+        "lineup": [
+            "Tiesto"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/100248302?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
     }
-  },
-  {
-    "id": 16380356,
-    "artist_id": 30843,
-    "artist_event_id": 21109394,
-    "title": "Ti\u00ebsto @ Frequency 2018 in Edmonton, Canada",
-    "datetime": "2018-02-18T21:00:33",
-    "formatted_datetime": "Sunday, February 18, 2018 at 9:00PM",
-    "formatted_location": "Edmonton, Canada",
-    "ticket_url": "http://www.bandsintown.com/event/16380356/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16380356?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Frequency 2018",
-      "place": "Frequency 2018",
-      "city": "Edmonton",
-      "region": "AB",
-      "country": "Canada",
-      "latitude": 53.5413799,
-      "longitude": -113.48608
-    }
-  },
-  {
-    "id": 15495692,
-    "artist_id": 30843,
-    "artist_event_id": 20459945,
-    "title": "Ti\u00ebsto @ EDC Mexico in Mexico City, Mexico",
-    "datetime": "2018-02-24T12:00:53",
-    "formatted_datetime": "Saturday, February 24, 2018 at 12:00PM",
-    "formatted_location": "Mexico City, Mexico",
-    "ticket_url": "http://www.bandsintown.com/event/15495692/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": "2017-09-22T16:00:00",
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/15495692?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "EDC Mexico",
-      "place": "Aut\u00f3dromo Hermanos Rodr\u00edguez",
-      "city": "Mexico City",
-      "region": "DF",
-      "country": "Mexico",
-      "latitude": 19.40259,
-      "longitude": -99.09815
-    }
-  },
-  {
-    "id": 16439687,
-    "artist_id": 30843,
-    "artist_event_id": 21323789,
-    "title": "Ti\u00ebsto @ ISY Music Festival in Sanya, China",
-    "datetime": "2018-03-03T19:00:00",
-    "formatted_datetime": "Saturday, March 3, 2018 at 7:00PM",
-    "formatted_location": "Sanya, China",
-    "ticket_url": "http://www.bandsintown.com/event/16439687/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16439687?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "ISY Music Festival",
-      "place": "ISY Music Festival",
-      "city": "Sanya",
-      "region": "31",
-      "country": "China",
-      "latitude": 19.2638889,
-      "longitude": 109.67
-    }
-  },
-  {
-    "id": 16550338,
-    "artist_id": 30843,
-    "artist_event_id": 21352036,
-    "title": "Ti\u00ebsto @ Harbour Convention Centre in Vancouver, Canada",
-    "datetime": "2018-03-09T19:00:46",
-    "formatted_datetime": "Friday, March 9, 2018 at 7:00PM",
-    "formatted_location": "Vancouver, Canada",
-    "ticket_url": "http://www.bandsintown.com/event/16550338/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16550338?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Harbour Convention Centre",
-      "place": "Harbour Convention Centre",
-      "city": "Vancouver",
-      "region": "BC",
-      "country": "Canada",
-      "latitude": 49.2746619,
-      "longitude": -123.1092174
-    }
-  },
-  {
-    "id": 16110324,
-    "artist_id": 30843,
-    "artist_event_id": 20753790,
-    "title": "Ti\u00ebsto @ Beyond Wonderland in Monterrey, Mexico",
-    "datetime": "2018-03-10T12:00:16",
-    "formatted_datetime": "Saturday, March 10, 2018 at 12:00PM",
-    "formatted_location": "Monterrey, Mexico",
-    "ticket_url": "http://www.bandsintown.com/event/16110324/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16110324?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Beyond Wonderland",
-      "place": "Beyond Wonderland",
-      "city": "Monterrey",
-      "region": "NL",
-      "country": "Mexico",
-      "latitude": 25.67703,
-      "longitude": -100.29
-    }
-  },
-  {
-    "id": 16507878,
-    "artist_id": 30843,
-    "artist_event_id": 21296582,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-03-15T22:00:14",
-    "formatted_datetime": "Thursday, March 15, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16507878/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16507878?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16507897,
-    "artist_id": 30843,
-    "artist_event_id": 21296605,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-03-17T22:00:38",
-    "formatted_datetime": "Saturday, March 17, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16507897/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16507897?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16507928,
-    "artist_id": 30843,
-    "artist_event_id": 21296642,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-03-24T22:00:00",
-    "formatted_datetime": "Saturday, March 24, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16507928/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16507928?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16631300,
-    "artist_id": 30843,
-    "artist_event_id": 21476840,
-    "title": "Ti\u00ebsto @ OMNIA NIGHTCLUB in Las Vegas, NV",
-    "datetime": "2018-03-27T22:30:19",
-    "formatted_datetime": "Tuesday, March 27, 2018 at 10:30PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16631300/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16631300?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "OMNIA NIGHTCLUB",
-      "place": "OMNIA NIGHTCLUB",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1195564,
-      "longitude": -115.1733398
-    }
-  },
-  {
-    "id": 16686397,
-    "artist_id": 30843,
-    "artist_event_id": 21557089,
-    "title": "Ti\u00ebsto @ One Third in Beijing, China",
-    "datetime": "2018-03-31T22:00:43",
-    "formatted_datetime": "Saturday, March 31, 2018 at 10:00PM",
-    "formatted_location": "Beijing, China",
-    "ticket_url": "http://www.bandsintown.com/event/16686397/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16686397?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "One Third",
-      "place": "One Third",
-      "city": "Beijing",
-      "region": "24",
-      "country": "China",
-      "latitude": 35.2091667,
-      "longitude": 110.7327778
-    }
-  },
-  {
-    "id": 16507997,
-    "artist_id": 30843,
-    "artist_event_id": 21296719,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-04-07T22:00:38",
-    "formatted_datetime": "Saturday, April 7, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16507997/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16507997?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16508074,
-    "artist_id": 30843,
-    "artist_event_id": 21296826,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-04-19T22:00:04",
-    "formatted_datetime": "Thursday, April 19, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508074/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508074?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16508088,
-    "artist_id": 30843,
-    "artist_event_id": 21296844,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vega Nightclub in Las Vegas, NV",
-    "datetime": "2018-04-21T22:00:00",
-    "formatted_datetime": "Saturday, April 21, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508088/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508088?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vega Nightclub",
-      "place": "Hakkasan Las Vega Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1024818,
-      "longitude": -115.1714783
-    }
-  },
-  {
-    "id": 16508125,
-    "artist_id": 30843,
-    "artist_event_id": 21296892,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-05-05T22:00:26",
-    "formatted_datetime": "Saturday, May 5, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508125/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508125?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16640834,
-    "artist_id": 30843,
-    "artist_event_id": 21491036,
-    "title": "Ti\u00ebsto @ WET REPUBLIC ULTRA POOL in Las Vegas, NV",
-    "datetime": "2018-05-06T11:00:02",
-    "formatted_datetime": "Sunday, May 6, 2018 at 11:00AM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16640834/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16640834?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "WET REPUBLIC ULTRA POOL",
-      "place": "WET REPUBLIC ULTRA POOL",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.101678,
-      "longitude": -115.168617
-    }
-  },
-  {
-    "id": 16508133,
-    "artist_id": 30843,
-    "artist_event_id": 21296900,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-05-10T22:00:17",
-    "formatted_datetime": "Thursday, May 10, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508133/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508133?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16640843,
-    "artist_id": 30843,
-    "artist_event_id": 21491044,
-    "title": "Ti\u00ebsto @ WET REPUBLIC ULTRA POOL in Las Vegas, NV",
-    "datetime": "2018-05-12T11:00:59",
-    "formatted_datetime": "Saturday, May 12, 2018 at 11:00AM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16640843/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16640843?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "WET REPUBLIC ULTRA POOL",
-      "place": "WET REPUBLIC ULTRA POOL",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.101678,
-      "longitude": -115.168617
-    }
-  },
-  {
-    "id": 16640847,
-    "artist_id": 30843,
-    "artist_event_id": 21491047,
-    "title": "Ti\u00ebsto @ WET REPUBLIC ULTRA POOL in Las Vegas, NV",
-    "datetime": "2018-05-19T11:00:45",
-    "formatted_datetime": "Saturday, May 19, 2018 at 11:00AM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16640847/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16640847?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "WET REPUBLIC ULTRA POOL",
-      "place": "WET REPUBLIC ULTRA POOL",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.101678,
-      "longitude": -115.168617
-    }
-  },
-  {
-    "id": 16508154,
-    "artist_id": 30843,
-    "artist_event_id": 21296930,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-05-25T22:00:13",
-    "formatted_datetime": "Friday, May 25, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508154/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508154?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16640862,
-    "artist_id": 30843,
-    "artist_event_id": 21491063,
-    "title": "Ti\u00ebsto @ WET REPUBLIC ULTRA POOL in Las Vegas, NV",
-    "datetime": "2018-05-26T11:00:50",
-    "formatted_datetime": "Saturday, May 26, 2018 at 11:00AM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16640862/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16640862?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "WET REPUBLIC ULTRA POOL",
-      "place": "WET REPUBLIC ULTRA POOL",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.101678,
-      "longitude": -115.168617
-    }
-  },
-  {
-    "id": 15895623,
-    "artist_id": 30843,
-    "artist_event_id": 20370028,
-    "title": "Ti\u00ebsto @ Finsbury Park in London, United Kingdom",
-    "datetime": "2018-05-27T19:00:00",
-    "formatted_datetime": "Sunday, May 27, 2018 at 7:00PM",
-    "formatted_location": "London, United Kingdom",
-    "ticket_url": "http://www.bandsintown.com/event/15895623/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": "2017-11-07T00:00:00",
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/15895623?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Finsbury Park",
-      "place": "Finsbury Park",
-      "city": "London",
-      "region": null,
-      "country": "United Kingdom",
-      "latitude": 51.564635,
-      "longitude": -0.105881
-    }
-  },
-  {
-    "id": 15899985,
-    "artist_id": 30843,
-    "artist_event_id": 20375365,
-    "title": "Ti\u00ebsto @ World Club Dome in Frankfurt, Germany",
-    "datetime": "2018-06-01T19:00:11",
-    "formatted_datetime": "Friday, June 1, 2018 at 7:00PM",
-    "formatted_location": "Frankfurt, Germany",
-    "ticket_url": "http://www.bandsintown.com/event/15899985/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Presale",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/15899985?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "World Club Dome",
-      "place": "World Club Dome",
-      "city": "Frankfurt",
-      "region": "HE",
-      "country": "Germany",
-      "latitude": 50.068661,
-      "longitude": 8.651048
-    }
-  },
-  {
-    "id": 16508167,
-    "artist_id": 30843,
-    "artist_event_id": 21296952,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-06-07T22:00:00",
-    "formatted_datetime": "Thursday, June 7, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508167/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508167?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16627811,
-    "artist_id": 30843,
-    "artist_event_id": 21474888,
-    "title": "Ti\u00ebsto @ SPRING AWAKENING in Chicago, IL",
-    "datetime": "2018-06-08T19:00:57",
-    "formatted_datetime": "Friday, June 8, 2018 at 7:00PM",
-    "formatted_location": "Chicago, IL",
-    "ticket_url": "http://www.bandsintown.com/event/16627811/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16627811?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "SPRING AWAKENING",
-      "place": "SPRING AWAKENING",
-      "city": "Chicago",
-      "region": "IL",
-      "country": "United States",
-      "latitude": 41.85,
-      "longitude": -87.65
-    }
-  },
-  {
-    "id": 16508174,
-    "artist_id": 30843,
-    "artist_event_id": 21296963,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-06-09T22:00:28",
-    "formatted_datetime": "Saturday, June 9, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508174/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508174?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16508190,
-    "artist_id": 30843,
-    "artist_event_id": 21296984,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-06-16T22:00:10",
-    "formatted_datetime": "Saturday, June 16, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508190/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508190?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16508210,
-    "artist_id": 30843,
-    "artist_event_id": 21297012,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-06-21T22:00:39",
-    "formatted_datetime": "Thursday, June 21, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508210/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508210?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16508221,
-    "artist_id": 30843,
-    "artist_event_id": 21297024,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-06-23T22:00:44",
-    "formatted_datetime": "Saturday, June 23, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508221/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508221?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16508348,
-    "artist_id": 30843,
-    "artist_event_id": 21297191,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-06-28T22:00:37",
-    "formatted_datetime": "Thursday, June 28, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508348/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508348?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16004763,
-    "artist_id": 30843,
-    "artist_event_id": 20546551,
-    "title": "Ti\u00ebsto @ Tinderbox in Odense, Denmark",
-    "datetime": "2018-06-30T19:00:00",
-    "formatted_datetime": "Saturday, June 30, 2018 at 7:00PM",
-    "formatted_location": "Odense, Denmark",
-    "ticket_url": "http://www.bandsintown.com/event/16004763/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16004763?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Tinderbox",
-      "place": "Tinderbox",
-      "city": "Odense",
-      "region": null,
-      "country": "Denmark",
-      "latitude": 55.3822051,
-      "longitude": 10.3402114
-    }
-  },
-  {
-    "id": 16034634,
-    "artist_id": 30843,
-    "artist_event_id": 20593256,
-    "title": "Ti\u00ebsto @ Airbeat One in Hamburg, Germany",
-    "datetime": "2018-07-12T19:00:00",
-    "formatted_datetime": "Thursday, July 12, 2018 at 7:00PM",
-    "formatted_location": "Hamburg, Germany",
-    "ticket_url": null,
-    "ticket_type": null,
-    "ticket_status": "unavailable",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16034634?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Airbeat One",
-      "place": "Airbeat One",
-      "city": "Hamburg",
-      "region": "04",
-      "country": "Germany",
-      "latitude": 53.55,
-      "longitude": 10.0
-    }
-  },
-  {
-    "id": 16109825,
-    "artist_id": 30843,
-    "artist_event_id": 20705763,
-    "title": "Ti\u00ebsto @ BH Stage in Mallorca, Spain",
-    "datetime": "2018-07-31T19:00:00",
-    "formatted_datetime": "Tuesday, July 31, 2018 at 7:00PM",
-    "formatted_location": "Mallorca, Spain",
-    "ticket_url": null,
-    "ticket_type": null,
-    "ticket_status": "unavailable",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16109825?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "BH Stage",
-      "place": "BH Stage",
-      "city": "Mallorca",
-      "region": "Autonoma Of Balearic Islands",
-      "country": "Spain",
-      "latitude": 39.50912,
-      "longitude": 2.53028
-    }
-  },
-  {
-    "id": 16317492,
-    "artist_id": 30843,
-    "artist_event_id": 21019773,
-    "title": "Ti\u00ebsto @ Big Slap in Malm\u00f6, Sweden",
-    "datetime": "2018-08-04T19:00:00",
-    "formatted_datetime": "Saturday, August 4, 2018 at 7:00PM",
-    "formatted_location": "Malm\u00f6, Sweden",
-    "ticket_url": "http://www.bandsintown.com/event/16317492/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16317492?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Big Slap",
-      "place": "Tallriken",
-      "city": "Malm\u00f6",
-      "region": null,
-      "country": "Sweden",
-      "latitude": 55.5902,
-      "longitude": 12.9886
-    }
-  },
-  {
-    "id": 16508377,
-    "artist_id": 30843,
-    "artist_event_id": 21297229,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-08-11T22:00:07",
-    "formatted_datetime": "Saturday, August 11, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508377/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508377?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16508397,
-    "artist_id": 30843,
-    "artist_event_id": 21297254,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-08-18T22:00:27",
-    "formatted_datetime": "Saturday, August 18, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508397/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508397?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16508418,
-    "artist_id": 30843,
-    "artist_event_id": 21297281,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-09-01T22:00:22",
-    "formatted_datetime": "Saturday, September 1, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508418/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508418?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16508428,
-    "artist_id": 30843,
-    "artist_event_id": 21297292,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-09-08T22:00:28",
-    "formatted_datetime": "Saturday, September 8, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508428/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508428?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16508443,
-    "artist_id": 30843,
-    "artist_event_id": 21297311,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-09-15T22:00:39",
-    "formatted_datetime": "Saturday, September 15, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508443/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508443?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16508457,
-    "artist_id": 30843,
-    "artist_event_id": 21297325,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-09-27T22:00:43",
-    "formatted_datetime": "Thursday, September 27, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508457/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508457?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  },
-  {
-    "id": 16508470,
-    "artist_id": 30843,
-    "artist_event_id": 21297340,
-    "title": "Ti\u00ebsto @ Hakkasan Las Vegas Nightclub in Las Vegas, NV",
-    "datetime": "2018-09-29T22:00:06",
-    "formatted_datetime": "Saturday, September 29, 2018 at 10:00PM",
-    "formatted_location": "Las Vegas, NV",
-    "ticket_url": "http://www.bandsintown.com/event/16508470/buy_tickets?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "ticket_type": "Tickets",
-    "ticket_status": "available",
-    "on_sale_datetime": null,
-    "facebook_rsvp_url": "http://www.bandsintown.com/event/16508470?app_id=artistgrowth-staging\u0026artist=Ti%C3%ABsto\u0026came_from=67",
-    "description": "",
-    "artists": [
-      {
-        "id": 30843,
-        "name": "Ti\u00ebsto",
-        "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
-        "image_url": "https://s3.amazonaws.com/bit-photos/large/8508720.jpeg",
-        "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8508720.jpeg",
-        "facebook_tour_dates_url": "http://www.bandsintown.com/Ti%C3%ABsto/facebookapp?came_from=67",
-        "facebook_page_url": "https://www.facebook.com/tiesto",
-        "tracker_count": 1384423,
-        "url": "Ti\u00ebsto",
-        "website": "http://www.tiesto.com"
-      }
-    ],
-    "venue": {
-      "name": "Hakkasan Las Vegas Nightclub",
-      "place": "Hakkasan Las Vegas Nightclub",
-      "city": "Las Vegas",
-      "region": "NV",
-      "country": "United States",
-      "latitude": 36.1014364,
-      "longitude": -115.1719965
-    }
-  }
 ]

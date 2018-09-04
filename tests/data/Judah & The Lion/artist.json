@@ -1,11 +1,11 @@
 {
-    "facebook_page_url": "https://www.facebook.com/judahandthelion",
-    "facebook_tour_dates_url": "http://www.bandsintown.com/JudahAndTheLion/facebookapp?came_from=67",
-    "id": 2809220,
-    "image_url": "https://s3.amazonaws.com/bit-photos/large/8405973.jpeg",
-    "mbid": null,
+    "id": "2809220",
     "name": "Judah & The Lion",
+    "url": "https://www.bandsintown.com/a/2809220?came_from=267&app_id=artistgrowth-dev",
+    "image_url": "https://s3.amazonaws.com/bit-photos/large/8405973.jpeg",
     "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8405973.jpeg",
-    "tracker_count": 106055,
-    "upcoming_event_count": 21
+    "facebook_page_url": "https://www.facebook.com/judahandthelion",
+    "mbid": "",
+    "tracker_count": 117504,
+    "upcoming_event_count": 66
 }

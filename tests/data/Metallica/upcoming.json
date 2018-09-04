@@ -1,247 +1,1100 @@
 [
     {
-        "id": 12637503,
-        "title": "Metallica @ Global Citizen Festival in New York, NY",
-        "datetime": "2016-09-24T19:00:00",
-        "formatted_datetime": "Saturday, September 24, 2016 at 7:00PM",
-        "formatted_location": "New York, NY",
-        "ticket_url": "http://www.bandsintown.com/event/12637503/buy_tickets?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
-        "ticket_type": "Tickets",
-        "ticket_status": "available",
-        "on_sale_datetime": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12637503?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
-        "description": null,
-        "artists": [
-            {
-                "name": "Metallica",
-                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
-                "facebook_page_url": null,
-                "tracker_count": 2749738,
-                "url": "Metallica",
-                "website": "http://metallica.com"
-            }
-        ],
+        "id": "1007407346",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007407346?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T16:00:00",
+        "datetime": "2018-09-04T19:30:00",
+        "description": "",
         "venue": {
-            "name": "Global Citizen Festival",
-            "place": "Global Citizen Festival",
-            "city": "New York",
+            "country": "United States",
+            "city": "Minneapolis",
+            "latitude": "44.979477",
+            "name": "Target Center",
+            "region": "MN",
+            "longitude": "-93.276158"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007407346?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007411058",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007411058?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T16:00:00",
+        "datetime": "2018-09-06T19:30:00",
+        "description": "To view clear bag policy, visit: http:\/\/bit.ly\/PBApolicy",
+        "venue": {
+            "country": "United States",
+            "city": "Lincoln",
+            "latitude": "40.816662",
+            "name": "Pinnacle Bank Arena",
+            "region": "NE",
+            "longitude": "-96.732857"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007411058?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007407145",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007407145?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T16:00:00",
+        "datetime": "2018-09-08T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Grand Forks",
+            "latitude": "47.910622",
+            "name": "Alerus Center",
+            "region": "ND",
+            "longitude": "-97.090996"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007407145?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007411140",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007411140?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T16:00:00",
+        "datetime": "2018-09-11T19:30:00",
+        "description": "Produced by FPC - LIVE",
+        "venue": {
+            "country": "United States",
+            "city": "Sioux Falls",
+            "latitude": "43.5607088",
+            "name": "Denny Sanford Premier Center",
+            "region": "SD",
+            "longitude": "-96.7515187"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007411140?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007400935",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007400935?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T16:00:00",
+        "datetime": "2018-09-13T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "Canada",
+            "city": "Winnipeg",
+            "latitude": "49.892622",
+            "name": "Bell MTS Place",
+            "region": "",
+            "longitude": "-97.14369"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007400935?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007401897",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007401897?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T19:00:00",
+        "datetime": "2018-09-15T19:30:00",
+        "description": "Metallica Saskatoon",
+        "venue": {
+            "country": "Canada",
+            "city": "Saskatoon",
+            "latitude": "52.1909398",
+            "name": "Sasktel Centre",
+            "region": "",
+            "longitude": "-106.6774643"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007401897?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1009570990",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1009570990?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-10-05T03:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Austin",
+            "latitude": "30.265664",
+            "name": "Zilker Metropolitan Park",
+            "region": "TX",
+            "longitude": "-97.766076"
+        },
+        "lineup": [
+            "Metallica",
+            "Arctic Monkeys",
+            "Manchester Orchestra",
+            "The National",
+            "St. Vincent",
+            "Paul McCartney",
+            "flor",
+            "Rezz",
+            "Childish Gambino",
+            "Mon laferte",
+            "Odesza",
+            "X Ambassadors",
+            "Naked Giants",
+            "Ravyn Lenae",
+            "Austin City Limits Festival",
+            "Travis Scott"
+        ],
+        "offers": []
+    },
+    {
+        "id": "1011156724",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1011156724?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-10-06T11:00:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Austin",
+            "latitude": "30.265664",
+            "name": "Zilker Metropolitan Park",
+            "region": "TX",
+            "longitude": "-97.766076"
+        },
+        "lineup": [
+            "Metallica",
+            "Deftones",
+            "Justice",
+            "Brandi Carlile",
+            "Manchester Orchestra",
+            "The Wombats",
+            "The National",
+            "St. Vincent",
+            "The Breeders",
+            "Sharon Van Etten",
+            "The Bells of Joy",
+            "Blood Orange",
+            "flor",
+            "Ikebe Shakedown",
+            "Rezz",
+            "Sweet Spirit",
+            "Highly Suspect",
+            "Residente",
+            "Mon laferte",
+            "The Indications",
+            "Bazzi",
+            "Jackie Venson",
+            "Red Yarn",
+            "CHVRCHES",
+            "Supa Bwe",
+            "Kupira Marimba",
+            "X Ambassadors",
+            "SAN HOLO",
+            "VÉRITÉ",
+            "Curtis Harding",
+            "Alice Merton",
+            "Japanese Breakfast",
+            "Molly Burch",
+            "Naked Giants",
+            "Sofi Tukker",
+            "Smino",
+            "Ravyn Lenae",
+            "Iamddb.",
+            "Slenderbodies",
+            "Austin City Limits Festival"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1011156724?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1009570855",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1009570855?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-10-12T03:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Austin",
+            "latitude": "30.265664",
+            "name": "Zilker Metropolitan Park",
+            "region": "TX",
+            "longitude": "-97.766076"
+        },
+        "lineup": [
+            "Metallica",
+            "Arctic Monkeys",
+            "Manchester Orchestra",
+            "The National",
+            "St. Vincent",
+            "Paul McCartney",
+            "Nicole Atkins",
+            "Rezz",
+            "Childish Gambino",
+            "Residente",
+            "Odesza",
+            "X Ambassadors",
+            "Austin City Limits Festival",
+            "Travis Scott"
+        ],
+        "offers": []
+    },
+    {
+        "id": "1011180937",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1011180937?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-10-13T11:00:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Austin",
+            "latitude": "30.265664",
+            "name": "Zilker Metropolitan Park",
+            "region": "TX",
+            "longitude": "-97.766076"
+        },
+        "lineup": [
+            "Metallica",
+            "Disturbed",
+            "Justice",
+            "Brandi Carlile",
+            "Manchester Orchestra",
+            "The Wombats",
+            "The National",
+            "St. Vincent",
+            "Lucie Silvas",
+            "Trampled by Turtles",
+            "The Breeders",
+            "Nicole Atkins",
+            "Ralph's World",
+            "Blood Orange",
+            "Ikebe Shakedown",
+            "Rezz",
+            "Highly Suspect",
+            "Residente",
+            "Mon laferte",
+            "Rhye",
+            "Ruston Kelly",
+            "Wallows",
+            "The Indications",
+            "Bazzi",
+            "CHVRCHES",
+            "X Ambassadors",
+            "SAN HOLO",
+            "VÉRITÉ",
+            "Marian Hill",
+            "Curtis Harding",
+            "Japanese Breakfast",
+            "Charley Crockett",
+            "Smino",
+            "LO MOON",
+            "Iamddb.",
+            "Slenderbodies",
+            "Austin City Limits Festival",
+            "Travis Scott"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1011180937?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007405445",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007405445?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T16:00:00",
+        "datetime": "2018-10-16T19:30:00",
+        "description": "Produced by FPC - Live",
+        "venue": {
+            "country": "United States",
+            "city": "Milwaukee",
+            "latitude": "43.0388889",
+            "name": "Fiserv Forum",
+            "region": "WI",
+            "longitude": "-87.9063889"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007405445?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007407237",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007407237?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T15:00:00",
+        "datetime": "2018-10-18T19:30:00",
+        "description": "Produced by FPC - LIVE",
+        "venue": {
+            "country": "United States",
+            "city": "Pittsburgh",
+            "latitude": "40.4388401",
+            "name": "PPG Paints Arena",
+            "region": "PA",
+            "longitude": "-79.9908551"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007407237?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007411377",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007411377?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T15:00:00",
+        "datetime": "2018-10-20T19:30:00",
+        "description": "Doors open at 6:00pm. NO PROFESSIONAL CAMERAS, VIDEO OR AUDIO RECORDING EQUIPMENT, ETC. ARE PERMITTED. Fans attending events in the Bryce Jordan Center will not be allowed to bring any large bags, backpacks, totes and coolers into the facility. Small clutch purses, handbags, fanny packs, diaper and medical bags may be carried into the arena along with (1) one gallon, zip-close style plastic bag.",
+        "venue": {
+            "country": "United States",
+            "city": "University Park",
+            "latitude": "40.8086435",
+            "name": "Bryce Jordan Center",
+            "region": "PA",
+            "longitude": "-77.8558448"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007411377?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007411393",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007411393?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T15:00:00",
+        "datetime": "2018-10-22T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Charlotte",
+            "latitude": "35.2251426",
+            "name": "Spectrum Center",
+            "region": "NC",
+            "longitude": "-80.8392351"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007411393?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1009917564",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1009917564?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "1900-01-01T06:00:00",
+        "datetime": "2018-10-25T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Philadelphia",
+            "latitude": "39.9012015",
+            "name": "Wells Fargo Center",
+            "region": "PA",
+            "longitude": "-75.1719795"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1009917564?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007411179",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007411179?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T15:00:00",
+        "datetime": "2018-10-27T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Buffalo",
+            "latitude": "42.87498",
+            "name": "KeyBank Center",
             "region": "NY",
-            "country": "United States",
-            "latitude": 40.7141667,
-            "longitude": -74.0063889
-        }
+            "longitude": "-78.87619"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007411179?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
     },
     {
-        "id": 12216472,
-        "title": "Metallica @ Shoreline Amphitheatre in Mountain View, CA",
-        "datetime": "2016-10-22T03:30:00",
-        "formatted_datetime": "Saturday, October 22, 2016 at 3:30AM",
-        "formatted_location": "Mountain View, CA",
-        "ticket_url": "http://www.bandsintown.com/event/12216472/buy_tickets?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
-        "ticket_type": "Tickets",
-        "ticket_status": "available",
-        "on_sale_datetime": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12216472?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
-        "description": "Tickets will not be delivered until after September 16th. ALL PERFORMERS ARE SUBJECT TO CHANGE. Neil Young + Promise of the Real Metallica Roger Waters Dave Matthews and Tim Reynolds case/lang/veirs Willie Nelson My Morning Jacket Norah Jones Cage The Elephant Nils Lofgren",
-        "artists": [
-            {
-                "name": "Metallica",
-                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
-                "facebook_page_url": null,
-                "tracker_count": 2749738,
-                "url": "Metallica",
-                "website": "http://metallica.com"
-            }
-        ],
+        "id": "1007406591",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007406591?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T15:00:00",
+        "datetime": "2018-10-29T19:30:00",
+        "description": "",
         "venue": {
-            "name": "Shoreline Amphitheatre",
-            "place": "Shoreline Amphitheatre",
-            "city": "Mountain View",
+            "country": "United States",
+            "city": "Albany",
+            "latitude": "42.6485495",
+            "name": "Times Union Center",
+            "region": "NY",
+            "longitude": "-73.7547501"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007406591?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007411315",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007411315?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T18:00:00",
+        "datetime": "2018-11-26T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Las Vegas",
+            "latitude": "36.103008",
+            "name": "T-Mobile Arena",
+            "region": "NV",
+            "longitude": "-115.178196"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007411315?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007411160",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007411160?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T17:00:00",
+        "datetime": "2018-11-28T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Boise",
+            "latitude": "43.6136111",
+            "name": "Taco Bell Arena",
+            "region": "ID",
+            "longitude": "-116.2025"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007411160?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007406953",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007406953?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T17:00:00",
+        "datetime": "2018-11-30T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Salt Lake City",
+            "latitude": "40.76772",
+            "name": "Vivint Smart Home Arena",
+            "region": "UT",
+            "longitude": "-111.901127"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007406953?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007411304",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007411304?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T18:00:00",
+        "datetime": "2018-12-02T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Spokane",
+            "latitude": "47.66546",
+            "name": "Spokane Arena",
+            "region": "WA",
+            "longitude": "-117.422404"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007411304?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007406590",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007406590?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T18:00:00",
+        "datetime": "2018-12-05T19:30:00",
+        "description": "Security Measures - No bags larger than 14x14x6 will be allowed inside the venue. All bags will be searched, please have all zippers and pouches on bags open and ready for inspection. In addition, all guests will go through metal detector scans. Please remove cell phones, keys and all metal from pockets prior to search. Remember, pocket knives are not allowed in the building.",
+        "venue": {
+            "country": "United States",
+            "city": "Portland",
+            "latitude": "45.531982",
+            "name": "Moda Center",
+            "region": "OR",
+            "longitude": "-122.667838"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007406590?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007411216",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007411216?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T18:00:00",
+        "datetime": "2018-12-07T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Sacramento",
+            "latitude": "38.5800073",
+            "name": "Golden 1 Center",
             "region": "CA",
-            "country": "United States",
-            "latitude": 37.42674,
-            "longitude": -122.080618
-        }
+            "longitude": "-121.5009825"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007411216?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
     },
     {
-        "id": 12216473,
-        "title": "Metallica @ Shoreline Amphitheatre in Mountain View, CA",
-        "datetime": "2016-10-23T03:30:00",
-        "formatted_datetime": "Sunday, October 23, 2016 at 3:30AM",
-        "formatted_location": "Mountain View, CA",
-        "ticket_url": "http://www.bandsintown.com/event/12216473/buy_tickets?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
-        "ticket_type": "Tickets",
-        "ticket_status": "available",
-        "on_sale_datetime": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12216473?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
-        "description": "Tickets will not be delivered until after September 12th. ALL PERFORMERS ARE SUBJECT TO CHANGE. Neil Young + Promise of the Real Metallica Roger Waters Dave Matthews and Tim Reynolds case/lang/veirs Willie Nelson My Morning Jacket Norah Jones Cage The Elephant Nils Lofgren",
-        "artists": [
-            {
-                "name": "Metallica",
-                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
-                "facebook_page_url": null,
-                "tracker_count": 2749738,
-                "url": "Metallica",
-                "website": "http://metallica.com"
-            }
-        ],
+        "id": "1007411314",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007411314?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T18:00:00",
+        "datetime": "2018-12-09T19:30:00",
+        "description": "",
         "venue": {
-            "name": "Shoreline Amphitheatre",
-            "place": "Shoreline Amphitheatre",
-            "city": "Mountain View",
+            "country": "United States",
+            "city": "Fresno",
+            "latitude": "36.809691",
+            "name": "Save Mart Center",
             "region": "CA",
+            "longitude": "-119.7385011"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007411314?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007411118",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007411118?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T16:00:00",
+        "datetime": "2019-01-18T19:30:00",
+        "description": "",
+        "venue": {
             "country": "United States",
-            "latitude": 37.42674,
-            "longitude": -122.080618
-        }
+            "city": "Tulsa",
+            "latitude": "36.152766",
+            "name": "BOK Center",
+            "region": "OK",
+            "longitude": "-95.996416"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007411118?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
     },
     {
-        "id": 12888546,
-        "title": "Metallica @ Coliseo De Puerto Rico in San Juan, Puerto Rico",
-        "datetime": "2016-10-26T00:00:00",
-        "formatted_datetime": "Wednesday, October 26, 2016 at 12:00AM",
-        "formatted_location": "San Juan, Puerto Rico",
-        "ticket_url": "http://www.bandsintown.com/event/12888546/buy_tickets?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
-        "ticket_type": "Tickets",
-        "ticket_status": "available",
-        "on_sale_datetime": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12888546?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
-        "description": "Metallica Coliseo de Puerto Rico Tickets - Buy and sell Metallica Hato Rey Tickets for October 26 at Coliseo de Puerto Rico in Hato Rey, PR on StubHub!",
-        "artists": [
-            {
-                "name": "Metallica",
-                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
-                "facebook_page_url": null,
-                "tracker_count": 2749738,
-                "url": "Metallica",
-                "website": "http://metallica.com"
-            }
-        ],
+        "id": "1007406891",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007406891?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T16:00:00",
+        "datetime": "2019-01-20T19:30:00",
+        "description": "The General Admission Floor is general admission standing - No Chairs On Floor",
         "venue": {
-            "name": "Coliseo De Puerto Rico",
-            "place": "Coliseo De Puerto Rico",
-            "city": "San Juan",
-            "region": "San Juan",
-            "country": "Puerto Rico",
-            "latitude": 18.4287322,
-            "longitude": -66.0632714
-        }
+            "country": "United States",
+            "city": "North Little Rock",
+            "latitude": "34.7550895",
+            "name": "Verizon Arena",
+            "region": "AR",
+            "longitude": "-92.2643235"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007406891?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
     },
     {
-        "id": 12893820,
-        "title": "Metallica @ Parque Bicentenario in Quito, Ecuador",
-        "datetime": "2016-10-29T00:00:00",
-        "formatted_datetime": "Saturday, October 29, 2016 at 12:00AM",
-        "formatted_location": "Quito, Ecuador",
-        "ticket_url": null,
-        "ticket_type": null,
-        "ticket_status": "unavailable",
-        "on_sale_datetime": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12893820?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
-        "description": null,
-        "artists": [
-            {
-                "name": "Metallica",
-                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
-                "facebook_page_url": null,
-                "tracker_count": 2749738,
-                "url": "Metallica",
-                "website": "http://metallica.com"
-            }
-        ],
+        "id": "1007405438",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007405438?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T16:00:00",
+        "datetime": "2019-01-22T19:30:00",
+        "description": "",
         "venue": {
-            "name": "Parque Bicentenario",
-            "place": "Parque Bicentenario",
-            "city": "Quito",
-            "region": "18",
-            "country": "Ecuador",
-            "latitude": -0.1401937,
-            "longitude": -78.4927035
-        }
+            "country": "United States",
+            "city": "Birmingham",
+            "latitude": "33.5205556",
+            "name": "Legacy Arena at The BJCC",
+            "region": "AL",
+            "longitude": "-86.8025"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007405438?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
     },
     {
-        "id": 12881484,
-        "title": "Metallica @ Hipodromo De Los Andes in Bogota, Colombia",
-        "datetime": "2016-11-01T20:00:00",
-        "formatted_datetime": "Tuesday, November 1, 2016 at 8:00PM",
-        "formatted_location": "Bogota, Colombia",
-        "ticket_url": null,
-        "ticket_type": null,
-        "ticket_status": "unavailable",
-        "on_sale_datetime": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12881484?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
-        "description": "Metallica Colombia",
-        "artists": [
-            {
-                "name": "Metallica",
-                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
-                "facebook_page_url": null,
-                "tracker_count": 2749738,
-                "url": "Metallica",
-                "website": "http://metallica.com"
-            }
-        ],
+        "id": "1007406851",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007406851?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T16:00:00",
+        "datetime": "2019-01-24T19:30:00",
+        "description": "",
         "venue": {
-            "name": "Hipodromo De Los Andes",
-            "place": "Hipodromo De Los Andes",
-            "city": "Bogota",
-            "region": "33",
-            "country": "Colombia",
-            "latitude": 4.6,
-            "longitude": -74.0833333
-        }
+            "country": "United States",
+            "city": "Nashville",
+            "latitude": "36.1593994",
+            "name": "Bridgestone Arena",
+            "region": "TN",
+            "longitude": "-86.7785057"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007406851?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
     },
     {
-        "id": 12893821,
-        "title": "Metallica @ Estadio Cemento Progreso in Ciudad De Guatemala, Guatemala",
-        "datetime": "2016-11-03T00:00:00",
-        "formatted_datetime": "Thursday, November 3, 2016 at 12:00AM",
-        "formatted_location": "Ciudad De Guatemala, Guatemala",
-        "ticket_url": null,
-        "ticket_type": null,
-        "ticket_status": "unavailable",
-        "on_sale_datetime": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12893821?app_id=YOUR_APP_ID\u0026artist=Metallica\u0026came_from=67",
-        "description": null,
-        "artists": [
-            {
-                "name": "Metallica",
-                "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Metallica/facebookapp?came_from=67",
-                "facebook_page_url": null,
-                "tracker_count": 2749738,
-                "url": "Metallica",
-                "website": "http://metallica.com"
-            }
-        ],
+        "id": "1007406618",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007406618?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T19:00:00",
+        "datetime": "2019-01-28T19:30:00",
+        "description": "",
         "venue": {
-            "name": "Estadio Cemento Progreso",
-            "place": "Estadio Cemento Progreso",
-            "city": "Ciudad De Guatemala",
-            "region": "07",
-            "country": "Guatemala",
-            "latitude": 14.6211111,
-            "longitude": -90.5269444
-        }
+            "country": "United States",
+            "city": "Raleigh",
+            "latitude": "35.8033394",
+            "name": "PNC Arena",
+            "region": "NC",
+            "longitude": "-78.7217946"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007406618?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007406557",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007406557?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T15:00:00",
+        "datetime": "2019-01-30T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Cincinnati",
+            "latitude": "39.0979112",
+            "name": "U.S. Bank Arena",
+            "region": "OH",
+            "longitude": "-84.5046276"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007406557?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007407296",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007407296?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T15:00:00",
+        "datetime": "2019-02-01T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Cleveland",
+            "latitude": "41.4965997",
+            "name": "Quicken Loans Arena",
+            "region": "OH",
+            "longitude": "-81.6882119"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007407296?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007405376",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007405376?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T17:00:00",
+        "datetime": "2019-02-28T19:30:00",
+        "description": "Tickets held at Will Call can only be retrieved by the cardholder with original purchase card and valid ID.",
+        "venue": {
+            "country": "United States",
+            "city": "El Paso",
+            "latitude": "31.777489",
+            "name": "Don Haskins Center",
+            "region": "TX",
+            "longitude": "-106.505564"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007405376?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007407090",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007407090?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T16:00:00",
+        "datetime": "2019-03-02T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Lubbock",
+            "latitude": "33.581334",
+            "name": "United Supermarkets Arena",
+            "region": "TX",
+            "longitude": "-101.886563"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007407090?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007405373",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007405373?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T16:00:00",
+        "datetime": "2019-03-04T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Wichita",
+            "latitude": "37.6825",
+            "name": "Intrust Bank Arena",
+            "region": "KS",
+            "longitude": "-97.332804"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007405373?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007418929",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007418929?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2019-03-06T19:30:00",
+        "description": "Metallica",
+        "venue": {
+            "country": "United States",
+            "city": "Kansas City",
+            "latitude": "39.0972997",
+            "name": "Sprint Center",
+            "region": "MO",
+            "longitude": "-94.5799392"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007418929?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007407345",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007407345?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T15:00:00",
+        "datetime": "2019-03-09T19:30:00",
+        "description": "Produced by NS2",
+        "venue": {
+            "country": "United States",
+            "city": "Louisville",
+            "latitude": "38.25486",
+            "name": "KFC Yum! Center",
+            "region": "KY",
+            "longitude": "-85.766404"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007407345?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007411396",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007411396?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T15:00:00",
+        "datetime": "2019-03-11T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Indianapolis",
+            "latitude": "39.7639301",
+            "name": "Bankers Life Fieldhouse",
+            "region": "IN",
+            "longitude": "-86.1554641"
+        },
+        "lineup": [
+            "Metallica",
+            "Jim Breuer"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007411396?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1007406702",
+        "artist_id": "128",
+        "url": "https:\/\/www.bandsintown.com\/e\/1007406702?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-02T17:00:00",
+        "datetime": "2019-03-13T19:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Grand Rapids",
+            "latitude": "42.963099",
+            "name": "Van Andel Arena",
+            "region": "MI",
+            "longitude": "-85.671624"
+        },
+        "lineup": [
+            "Metallica"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1007406702?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
     }
 ]

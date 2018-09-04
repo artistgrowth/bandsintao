@@ -1,352 +1,218 @@
 [
     {
-        "artists": [
-            {
-                "facebook_page_url": "https://www.facebook.com/skrillex",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Skrillex/facebookapp?came_from=67",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6278128.jpeg",
-                "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
-                "name": "Skrillex",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6278128.jpeg",
-                "tracker_count": 2204219,
-                "url": "Skrillex",
-                "website": "http://www.skrillex.com"
-            }
-        ],
-        "datetime": "2016-09-23T11:00:00",
-        "description": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12557466?app_id=testing&artist=Skrillex&came_from=67",
-        "formatted_datetime": "Friday, September 23, 2016 at 11:00AM",
-        "formatted_location": "Las Vegas, NV",
-        "id": 12557466,
-        "on_sale_datetime": null,
-        "ticket_status": "available",
-        "ticket_type": "Tickets",
-        "ticket_url": "http://www.bandsintown.com/event/12557466/buy_tickets?app_id=testing&artist=Skrillex&came_from=67",
-        "title": "Skrillex @ Encore Beach Club in Las Vegas, NV",
+        "id": "1009935554",
+        "artist_id": "438314",
+        "url": "https:\/\/www.bandsintown.com\/e\/1009935554?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-05-24T12:00:55",
+        "datetime": "2018-09-22T12:00:00",
+        "description": "",
         "venue": {
-            "city": "Las Vegas",
-            "country": "United States",
-            "latitude": 36.12714,
-            "longitude": -115.1629562,
-            "name": "Encore Beach Club",
-            "place": "Encore Beach Club",
-            "region": "NV"
-        }
+            "country": "Australia",
+            "city": "Melbourne",
+            "latitude": "-37.8166667",
+            "name": "Listen Out Melbourne",
+            "region": "",
+            "longitude": "144.9666667"
+        },
+        "lineup": [
+            "Skrillex"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1009935554?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
     },
     {
-        "artists": [
-            {
-                "facebook_page_url": "https://www.facebook.com/skrillex",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Skrillex/facebookapp?came_from=67",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6278128.jpeg",
-                "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
-                "name": "Skrillex",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6278128.jpeg",
-                "tracker_count": 2204219,
-                "url": "Skrillex",
-                "website": "http://www.skrillex.com"
-            }
-        ],
-        "datetime": "2016-09-24T13:00:00",
-        "description": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12586159?app_id=testing&artist=Skrillex&came_from=67",
-        "formatted_datetime": "Saturday, September 24, 2016 at 1:00PM",
-        "formatted_location": "Chicago, IL",
-        "id": 12586159,
-        "on_sale_datetime": null,
-        "ticket_status": "available",
-        "ticket_type": "Sold Out",
-        "ticket_url": "http://www.bandsintown.com/event/12586159/buy_tickets?app_id=testing&artist=Skrillex&came_from=67",
-        "title": "Skrillex @ Chance The Rapper's Magnificent Coloring Day! in Chicago, IL",
+        "id": "1009935556",
+        "artist_id": "438314",
+        "url": "https:\/\/www.bandsintown.com\/e\/1009935556?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-05-24T12:00:00",
+        "datetime": "2018-09-23T12:00:00",
+        "description": "",
         "venue": {
-            "city": "Chicago",
-            "country": "United States",
-            "latitude": 41.829347,
-            "longitude": -87.633788,
-            "name": "Chance The Rapper's Magnificent Coloring Day!",
-            "place": "US Cellular Field",
-            "region": "IL"
-        }
+            "country": "Australia",
+            "city": "Perth",
+            "latitude": "-31.9333333",
+            "name": "Listen Out Perth",
+            "region": "",
+            "longitude": "115.8333333"
+        },
+        "lineup": [
+            "Skrillex"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1009935556?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
     },
     {
-        "artists": [
-            {
-                "facebook_page_url": "https://www.facebook.com/skrillex",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Skrillex/facebookapp?came_from=67",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6278128.jpeg",
-                "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
-                "name": "Skrillex",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6278128.jpeg",
-                "tracker_count": 2204219,
-                "url": "Skrillex",
-                "website": "http://www.skrillex.com"
-            }
-        ],
-        "datetime": "2016-10-01T19:00:00",
-        "description": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12740268?app_id=testing&artist=Skrillex&came_from=67",
-        "formatted_datetime": "Saturday, October 1, 2016 at 7:00PM",
-        "formatted_location": "Shanghai, China",
-        "id": 12740268,
-        "on_sale_datetime": null,
-        "ticket_status": "available",
-        "ticket_type": "Tickets",
-        "ticket_url": "http://www.bandsintown.com/event/12740268/buy_tickets?app_id=testing&artist=Skrillex&came_from=67",
-        "title": "Skrillex @ STORM Electronic Music Festival in Shanghai, China",
+        "id": "100083669",
+        "artist_id": "438314",
+        "url": "https:\/\/www.bandsintown.com\/e\/100083669?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-07-05T12:00:00",
+        "datetime": "2018-09-28T19:00:22",
+        "description": "",
         "venue": {
-            "city": "Shanghai",
+            "country": "New Zealand",
+            "city": "Auckland",
+            "latitude": "-36.8484597",
+            "name": "Listen In Auckland",
+            "region": "",
+            "longitude": "174.7633315"
+        },
+        "lineup": [
+            "Skrillex"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/100083669?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1009935557",
+        "artist_id": "438314",
+        "url": "https:\/\/www.bandsintown.com\/e\/1009935557?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-05-24T12:00:00",
+        "datetime": "2018-09-29T12:00:00",
+        "description": "",
+        "venue": {
+            "country": "Australia",
+            "city": "Broadway, Sydney",
+            "latitude": "-33.8842316",
+            "name": "Listen Out Sydney",
+            "region": "",
+            "longitude": "151.1998749"
+        },
+        "lineup": [
+            "Skrillex"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1009935557?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1009935558",
+        "artist_id": "438314",
+        "url": "https:\/\/www.bandsintown.com\/e\/1009935558?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-05-24T12:00:00",
+        "datetime": "2018-09-30T12:00:00",
+        "description": "",
+        "venue": {
+            "country": "Australia",
+            "city": "Brisbane",
+            "latitude": "-27.5",
+            "name": "Listen Out Brisbane",
+            "region": "",
+            "longitude": "153.0166667"
+        },
+        "lineup": [
+            "Skrillex"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1009935558?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "100101961",
+        "artist_id": "438314",
+        "url": "https:\/\/www.bandsintown.com\/e\/100101961?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-10-01T19:00:49",
+        "description": "",
+        "venue": {
+            "country": "Australia",
+            "city": "Adelaide",
+            "latitude": "-34.92849890000001",
+            "name": "Listen In Adelaide",
+            "region": "",
+            "longitude": "138.6007456"
+        },
+        "lineup": [
+            "Skrillex"
+        ],
+        "offers": []
+    },
+    {
+        "id": "100296368",
+        "artist_id": "438314",
+        "url": "https:\/\/www.bandsintown.com\/e\/100296368?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-12-08T19:00:08",
+        "description": "",
+        "venue": {
             "country": "China",
-            "latitude": 31.005,
-            "longitude": 121.4086111,
-            "name": "STORM Electronic Music Festival",
-            "place": "STORM Electronic Music Festival",
-            "region": "23"
-        }
+            "city": "Shenzhen",
+            "latitude": "22.543096",
+            "name": "Electric Jungle Music Festival",
+            "region": "",
+            "longitude": "114.057865"
+        },
+        "lineup": [
+            "Skrillex"
+        ],
+        "offers": []
     },
     {
-        "artists": [
-            {
-                "facebook_page_url": "https://www.facebook.com/skrillex",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Skrillex/facebookapp?came_from=67",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6278128.jpeg",
-                "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
-                "name": "Skrillex",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6278128.jpeg",
-                "tracker_count": 2204219,
-                "url": "Skrillex",
-                "website": "http://www.skrillex.com"
-            }
-        ],
-        "datetime": "2016-10-08T22:00:00",
-        "description": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12925339?app_id=testing&artist=Skrillex&came_from=67",
-        "formatted_datetime": "Saturday, October 8, 2016 at 10:00PM",
-        "formatted_location": "Las Vegas, NV",
-        "id": 12925339,
-        "on_sale_datetime": null,
-        "ticket_status": "available",
-        "ticket_type": "Tickets",
-        "ticket_url": "http://www.bandsintown.com/event/12925339/buy_tickets?app_id=testing&artist=Skrillex&came_from=67",
-        "title": "Skrillex @ XS THE NIGHTCLUB AT ENCORE in Las Vegas, NV",
+        "id": "100229294",
+        "artist_id": "438314",
+        "url": "https:\/\/www.bandsintown.com\/e\/100229294?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-12-30T19:00:42",
+        "description": "",
         "venue": {
-            "city": "Las Vegas",
             "country": "United States",
-            "latitude": 36.1265953,
-            "longitude": -115.1653652,
-            "name": "XS THE NIGHTCLUB AT ENCORE",
-            "place": "XS THE NIGHTCLUB AT ENCORE",
-            "region": "NV"
-        }
+            "city": "Chandler",
+            "latitude": "33.30616049999999",
+            "name": "Decadence AZ",
+            "region": "",
+            "longitude": "-111.8412502"
+        },
+        "lineup": [
+            "Skrillex"
+        ],
+        "offers": []
     },
     {
-        "artists": [
-            {
-                "facebook_page_url": "https://www.facebook.com/skrillex",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Skrillex/facebookapp?came_from=67",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6278128.jpeg",
-                "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
-                "name": "Skrillex",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6278128.jpeg",
-                "tracker_count": 2204219,
-                "url": "Skrillex",
-                "website": "http://www.skrillex.com"
-            }
-        ],
-        "datetime": "2016-10-22T22:00:00",
-        "description": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12925342?app_id=testing&artist=Skrillex&came_from=67",
-        "formatted_datetime": "Saturday, October 22, 2016 at 10:00PM",
-        "formatted_location": "Las Vegas, NV",
-        "id": 12925342,
-        "on_sale_datetime": null,
-        "ticket_status": "available",
-        "ticket_type": "Tickets",
-        "ticket_url": "http://www.bandsintown.com/event/12925342/buy_tickets?app_id=testing&artist=Skrillex&came_from=67",
-        "title": "Skrillex @ XS THE NIGHTCLUB AT ENCORE in Las Vegas, NV",
+        "id": "100207188",
+        "artist_id": "438314",
+        "url": "https:\/\/www.bandsintown.com\/e\/100207188?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-12-31T19:00:49",
+        "description": "",
         "venue": {
-            "city": "Las Vegas",
             "country": "United States",
-            "latitude": 36.1265953,
-            "longitude": -115.1653652,
-            "name": "XS THE NIGHTCLUB AT ENCORE",
-            "place": "XS THE NIGHTCLUB AT ENCORE",
-            "region": "NV"
-        }
-    },
-    {
-        "artists": [
-            {
-                "facebook_page_url": "https://www.facebook.com/skrillex",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Skrillex/facebookapp?came_from=67",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6278128.jpeg",
-                "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
-                "name": "Skrillex",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6278128.jpeg",
-                "tracker_count": 2204219,
-                "url": "Skrillex",
-                "website": "http://www.skrillex.com"
-            }
+            "city": "Minneapolis",
+            "latitude": "44.977753",
+            "name": "Snowta NYE",
+            "region": "MN",
+            "longitude": "-93.2650108"
+        },
+        "lineup": [
+            "Skrillex"
         ],
-        "datetime": "2016-10-29T22:00:00",
-        "description": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12925351?app_id=testing&artist=Skrillex&came_from=67",
-        "formatted_datetime": "Saturday, October 29, 2016 at 10:00PM",
-        "formatted_location": "Las Vegas, NV",
-        "id": 12925351,
-        "on_sale_datetime": null,
-        "ticket_status": "available",
-        "ticket_type": "Tickets",
-        "ticket_url": "http://www.bandsintown.com/event/12925351/buy_tickets?app_id=testing&artist=Skrillex&came_from=67",
-        "title": "Skrillex @ XS THE NIGHTCLUB AT ENCORE in Las Vegas, NV",
-        "venue": {
-            "city": "Las Vegas",
-            "country": "United States",
-            "latitude": 36.1265953,
-            "longitude": -115.1653652,
-            "name": "XS THE NIGHTCLUB AT ENCORE",
-            "place": "XS THE NIGHTCLUB AT ENCORE",
-            "region": "NV"
-        }
-    },
-    {
-        "artists": [
+        "offers": [
             {
-                "facebook_page_url": "https://www.facebook.com/skrillex",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Skrillex/facebookapp?came_from=67",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6278128.jpeg",
-                "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
-                "name": "Skrillex",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6278128.jpeg",
-                "tracker_count": 2204219,
-                "url": "Skrillex",
-                "website": "http://www.skrillex.com"
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/100207188?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
             }
-        ],
-        "datetime": "2016-11-05T19:00:00",
-        "description": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12675829?app_id=testing&artist=Skrillex&came_from=67",
-        "formatted_datetime": "Saturday, November 5, 2016 at 7:00PM",
-        "formatted_location": "Long Beach, CA",
-        "id": 12675829,
-        "on_sale_datetime": null,
-        "ticket_status": "available",
-        "ticket_type": "Tickets",
-        "ticket_url": "http://www.bandsintown.com/event/12675829/buy_tickets?app_id=testing&artist=Skrillex&came_from=67",
-        "title": "Skrillex @ ComplexCon in Long Beach, CA",
-        "venue": {
-            "city": "Long Beach",
-            "country": "United States",
-            "latitude": 33.766739,
-            "longitude": -118.1891725,
-            "name": "ComplexCon",
-            "place": "Long Beach Convention Center",
-            "region": "CA"
-        }
-    },
-    {
-        "artists": [
-            {
-                "facebook_page_url": "https://www.facebook.com/skrillex",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Skrillex/facebookapp?came_from=67",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6278128.jpeg",
-                "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
-                "name": "Skrillex",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6278128.jpeg",
-                "tracker_count": 2204219,
-                "url": "Skrillex",
-                "website": "http://www.skrillex.com"
-            }
-        ],
-        "datetime": "2016-12-10T19:00:00",
-        "description": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12306421?app_id=testing&artist=Skrillex&came_from=67",
-        "formatted_datetime": "Saturday, December 10, 2016 at 7:00PM",
-        "formatted_location": "Suva, Fiji",
-        "id": 12306421,
-        "on_sale_datetime": null,
-        "ticket_status": "available",
-        "ticket_type": "Tickets",
-        "ticket_url": "http://www.bandsintown.com/event/12306421/buy_tickets?app_id=testing&artist=Skrillex&came_from=67",
-        "title": "Skrillex @ Your Paradise Fiji [Dec 10-16] in Suva, Fiji",
-        "venue": {
-            "city": "Suva",
-            "country": "Fiji",
-            "latitude": -18.1333333,
-            "longitude": 178.4166667,
-            "name": "Your Paradise Fiji [Dec 10-16]",
-            "place": "Plantation Island Resort",
-            "region": "01"
-        }
-    },
-    {
-        "artists": [
-            {
-                "facebook_page_url": "https://www.facebook.com/skrillex",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Skrillex/facebookapp?came_from=67",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6278128.jpeg",
-                "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
-                "name": "Skrillex",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6278128.jpeg",
-                "tracker_count": 2204219,
-                "url": "Skrillex",
-                "website": "http://www.skrillex.com"
-            }
-        ],
-        "datetime": "2016-12-16T19:00:00",
-        "description": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12306440?app_id=testing&artist=Skrillex&came_from=67",
-        "formatted_datetime": "Friday, December 16, 2016 at 7:00PM",
-        "formatted_location": "Suva, Fiji",
-        "id": 12306440,
-        "on_sale_datetime": null,
-        "ticket_status": "available",
-        "ticket_type": "Tickets",
-        "ticket_url": "http://www.bandsintown.com/event/12306440/buy_tickets?app_id=testing&artist=Skrillex&came_from=67",
-        "title": "Skrillex @ Your Paradise Fiji [Dec 10-16] in Suva, Fiji",
-        "venue": {
-            "city": "Suva",
-            "country": "Fiji",
-            "latitude": -18.1333333,
-            "longitude": 178.4166667,
-            "name": "Your Paradise Fiji [Dec 10-16]",
-            "place": "Plantation Island Resort",
-            "region": "01"
-        }
-    },
-    {
-        "artists": [
-            {
-                "facebook_page_url": "https://www.facebook.com/skrillex",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/Skrillex/facebookapp?came_from=67",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6278128.jpeg",
-                "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
-                "name": "Skrillex",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6278128.jpeg",
-                "tracker_count": 2204219,
-                "url": "Skrillex",
-                "website": "http://www.skrillex.com"
-            }
-        ],
-        "datetime": "2016-12-31T19:00:00",
-        "description": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12925324?app_id=testing&artist=Skrillex&came_from=67",
-        "formatted_datetime": "Saturday, December 31, 2016 at 7:00PM",
-        "formatted_location": "Miami, FL",
-        "id": 12925324,
-        "on_sale_datetime": null,
-        "ticket_status": "available",
-        "ticket_type": "Tickets",
-        "ticket_url": "http://www.bandsintown.com/event/12925324/buy_tickets?app_id=testing&artist=Skrillex&came_from=67",
-        "title": "Skrillex @ LIV in Miami, FL",
-        "venue": {
-            "city": "Miami",
-            "country": "United States",
-            "latitude": 25.7738889,
-            "longitude": -80.1938889,
-            "name": "LIV",
-            "place": "LIV",
-            "region": "FL"
-        }
+        ]
     }
 ]

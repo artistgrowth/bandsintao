@@ -32,9 +32,9 @@ def _load_test_file_raw(filename, dir_name="", encoding="utf-8"):
     return output
 
 
-class ArtistId(collections.namedtuple("ArtistId", ("artist_id", "slug", "music_brainz_id", "facebook_id"))):
+class ArtistId(collections.namedtuple("ArtistId", ("artist_id", "slug", "music_brainz_id", "facebook_id", "expected"))):
     @staticmethod
-    def load_from_slug(slug):
+    def load_from_slug(slug, expected=None):
         """
         Loads the artist.json file, e.g.:
 
@@ -55,7 +55,7 @@ class ArtistId(collections.namedtuple("ArtistId", ("artist_id", "slug", "music_b
         """
         raw = _load_test_file_raw(filename="artist.json", dir_name=os.path.join("data", slug))
         data = jjson.loads(raw)
-        return ArtistId(data.get("name"), slug, data.get("mbid"), None)
+        return ArtistId(data.get("name"), slug, data.get("mbid"), None, expected)
 
 
 class lazy_property(object):
@@ -103,7 +103,7 @@ class ArtistData(object):
 
     @lazy_property
     def ti3sto(self):
-        return ArtistId.load_from_slug("Tiësto")
+        return ArtistId.load_from_slug("Tiësto", "Tiesto")
 
     @lazy_property
     def judah_and_the_lion(self):
@@ -130,7 +130,7 @@ class ArtistTestCase(unittest.TestCase):
             else:
                 url_or_slug = "https://www.bandsintown.com/{}".format(entity.slug)
             identifier, slug = Artist.get_identifier(url_or_slug)
-            self.assertEqual(slug, entity.slug)
+            self.assertEqual(slug, entity.expected or entity.slug)
             self.assertEqual(identifier, entity.artist_id)
             return identifier, slug
 

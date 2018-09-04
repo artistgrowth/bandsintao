@@ -1,10 +1,11 @@
 {
-    "facebook_page_url": "https://www.facebook.com/skrillex",
-    "facebook_tour_dates_url": "http://www.bandsintown.com/Skrillex/facebookapp?came_from=67",
-    "image_url": "https://s3.amazonaws.com/bit-photos/large/6278128.jpeg",
-    "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
+    "id": "438314",
     "name": "Skrillex",
-    "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6278128.jpeg",
-    "tracker_count": 2204219,
+    "url": "https://www.bandsintown.com/a/438314?came_from=267&app_id=artistgrowth-dev",
+    "image_url": "https://s3.amazonaws.com/bit-photos/large/8735764.jpeg",
+    "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/8735764.jpeg",
+    "facebook_page_url": "https://www.facebook.com/skrillex",
+    "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
+    "tracker_count": 2762452,
     "upcoming_event_count": 10
 }

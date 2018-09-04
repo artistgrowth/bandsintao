@@ -1,72 +1,28 @@
 [
     {
-        "id": 12752940,
-        "title": "Kings of Leon @ Live Out in Monterrey, Mexico",
-        "datetime": "2016-10-01T19:00:00",
-        "formatted_datetime": "Saturday, October 1, 2016 at 7:00PM",
-        "formatted_location": "Monterrey, Mexico",
-        "ticket_url": "http://www.bandsintown.com/event/12752940/buy_tickets?app_id=YOUR_APP_ID\u0026artist=Kings+of+Leon\u0026came_from=67",
-        "ticket_type": "Tickets",
-        "ticket_status": "available",
-        "on_sale_datetime": null,
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12752940?app_id=YOUR_APP_ID\u0026artist=Kings+of+Leon\u0026came_from=67",
-        "description": null,
-        "artists": [
-            {
-                "name": "Kings of Leon",
-                "mbid": "6ffb8ea9-2370-44d8-b678-e9237bbd347b",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6861902.jpeg",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6861902.jpeg",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/KingsOfLeon/facebookapp?came_from=67",
-                "facebook_page_url": "https://www.facebook.com/KingsOfLeon",
-                "tracker_count": 2164577,
-                "url": "KingsOfLeon",
-                "website": "http://www.kingsofleon.com"
-            }
-        ],
+        "id": "1009792369",
+        "artist_id": "983",
+        "url": "https:\/\/www.bandsintown.com\/e\/1009792369?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-10-12T19:00:15",
+        "description": "",
         "venue": {
-            "name": "Live Out",
-            "place": "Live Out",
-            "city": "Monterrey",
-            "region": "19",
-            "country": "Mexico",
-            "latitude": 25.6666667,
-            "longitude": -100.3166667
-        }
-    },
-    {
-        "id": 12915541,
-        "title": "Kings of Leon @ Ascend Amphitheater in Nashville, TN",
-        "datetime": "2016-10-06T20:00:00",
-        "formatted_datetime": "Thursday, October 6, 2016 at 8:00PM",
-        "formatted_location": "Nashville, TN",
-        "ticket_url": "http://www.bandsintown.com/event/12915541/buy_tickets?app_id=YOUR_APP_ID\u0026artist=Kings+of+Leon\u0026came_from=67",
-        "ticket_type": "Tickets",
-        "ticket_status": "available",
-        "on_sale_datetime": "2016-09-16T15:00:00",
-        "facebook_rsvp_url": "http://www.bandsintown.com/event/12915541?app_id=YOUR_APP_ID\u0026artist=Kings+of+Leon\u0026came_from=67",
-        "description": null,
-        "artists": [
-            {
-                "name": "Kings of Leon",
-                "mbid": "6ffb8ea9-2370-44d8-b678-e9237bbd347b",
-                "image_url": "https://s3.amazonaws.com/bit-photos/large/6861902.jpeg",
-                "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6861902.jpeg",
-                "facebook_tour_dates_url": "http://www.bandsintown.com/KingsOfLeon/facebookapp?came_from=67",
-                "facebook_page_url": "https://www.facebook.com/KingsOfLeon",
-                "tracker_count": 2164577,
-                "url": "KingsOfLeon",
-                "website": "http://www.kingsofleon.com"
-            }
-        ],
-        "venue": {
-            "name": "Ascend Amphitheater",
-            "place": "Ascend Amphitheater",
-            "city": "Nashville",
-            "region": "TN",
             "country": "United States",
-            "latitude": 36.1602316,
-            "longitude": -86.77312
-        }
+            "city": "Thackerville",
+            "latitude": "33.757785",
+            "name": "Global Event Center at WinStar World Casino and Resort",
+            "region": "OK",
+            "longitude": "-97.132039"
+        },
+        "lineup": [
+            "Kings of Leon"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1009792369?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
     }
 ]

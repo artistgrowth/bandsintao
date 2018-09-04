@@ -1,10 +1,11 @@
 {
+    "id": "128",
     "name": "Metallica",
+    "url": "https://www.bandsintown.com/a/128?came_from=267&app_id=artistgrowth-dev",
     "image_url": "https://s3.amazonaws.com/bit-photos/large/6874519.jpeg",
     "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6874519.jpeg",
-    "facebook_tour_dates_url": null,
-    "facebook_page_url": null,
+    "facebook_page_url": "",
     "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
-    "tracker_count": 2749738,
-    "upcoming_event_count": 7
+    "tracker_count": 3540689,
+    "upcoming_event_count": 65
 }
