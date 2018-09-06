@@ -1,0 +1,113 @@
+[
+    {
+        "id": "100106049",
+        "artist_id": "2809220",
+        "url": "https:\/\/www.bandsintown.com\/e\/100106049?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-09-07T12:00:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Columbus",
+            "latitude": "39.9611755",
+            "name": "Abercrombie & Fitch Home Office",
+            "region": "OH",
+            "longitude": "-82.99879419999999"
+        },
+        "lineup": [
+            "Judah & The Lion"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/100106049?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1008085189",
+        "artist_id": "2809220",
+        "url": "https:\/\/www.bandsintown.com\/e\/1008085189?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-09-09T19:00:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Chattanooga",
+            "latitude": "35.0455556",
+            "name": "Moon River Music Festival",
+            "region": "TN",
+            "longitude": "-85.3097222"
+        },
+        "lineup": [
+            "Judah & The Lion",
+            "The War and Treaty",
+            "Darlingside",
+            "The Head and the Heart",
+            "Wilder",
+            "The Ballroom Thieves",
+            "Drew Holcomb & The Neighbors",
+            "Durand Jones & The Indications"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1008085189?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "100114027",
+        "artist_id": "2809220",
+        "url": "https:\/\/www.bandsintown.com\/e\/100114027?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-09-29T18:00:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Charlotte",
+            "latitude": "35.2270869",
+            "name": "Taco Lucha Fest",
+            "region": "NC",
+            "longitude": "-80.8431267"
+        },
+        "lineup": [
+            "Judah & The Lion"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/100114027?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "100225580",
+        "artist_id": "2809220",
+        "url": "https:\/\/www.bandsintown.com\/e\/100225580?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-09-30T19:00:34",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Johnson City",
+            "latitude": "36.30409",
+            "name": "East Tennessee State University",
+            "region": "TN",
+            "longitude": "-82.36247"
+        },
+        "lineup": [
+            "Judah & The Lion"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/100225580?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    }
+]

@@ -1,0 +1,28 @@
+[
+    {
+        "id": "1009792369",
+        "artist_id": "983",
+        "url": "https:\/\/www.bandsintown.com\/e\/1009792369?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-10-12T19:00:15",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Thackerville",
+            "latitude": "33.757785",
+            "name": "Global Event Center at WinStar World Casino and Resort",
+            "region": "OK",
+            "longitude": "-97.132039"
+        },
+        "lineup": [
+            "Kings of Leon"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1009792369?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    }
+]

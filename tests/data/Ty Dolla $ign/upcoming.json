@@ -1,0 +1,330 @@
+[
+    {
+        "id": "1010243671",
+        "artist_id": "5039947",
+        "url": "https:\/\/www.bandsintown.com\/e\/1010243671?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-23T14:00:00",
+        "datetime": "2018-09-04T19:00:23",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Raleigh",
+            "latitude": "35.7493202",
+            "name": "Coastal Credit Union Music Park At Walnut Creek",
+            "region": "NC",
+            "longitude": "-78.5762494"
+        },
+        "lineup": [
+            "Ty Dolla $ign",
+            "YBN Nahmir",
+            "P-Lo",
+            "Murda Beatz",
+            "Lil Uzi Vert"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1010243671?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1008351684",
+        "artist_id": "5039947",
+        "url": "https:\/\/www.bandsintown.com\/e\/1008351684?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-23T16:00:00",
+        "datetime": "2018-09-05T18:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Atlanta",
+            "latitude": "33.7488889",
+            "name": "CELLAIRIS AMPHITHEATRE AT LAKEWOOD",
+            "region": "GA",
+            "longitude": "-84.3880556"
+        },
+        "lineup": [
+            "Ty Dolla $ign",
+            "P-Lo",
+            "G-Eazy",
+            "Lil Uzi Vert",
+            "Murda Beatz",
+            "YBN Nahmir"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1008351684?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1008351685",
+        "artist_id": "5039947",
+        "url": "https:\/\/www.bandsintown.com\/e\/1008351685?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-23T14:00:00",
+        "datetime": "2018-09-07T18:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Tampa",
+            "latitude": "27.9472222",
+            "name": "MIDFLORIDA Credit Union Amphitheatre at the FL State Fairgrounds",
+            "region": "FL",
+            "longitude": "-82.4586111"
+        },
+        "lineup": [
+            "Ty Dolla $ign",
+            "Lil Uzi Vert",
+            "P-Lo",
+            "Murda Beatz",
+            "YBN Nahmir"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1008351685?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1008351686",
+        "artist_id": "5039947",
+        "url": "https:\/\/www.bandsintown.com\/e\/1008351686?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-23T14:00:00",
+        "datetime": "2018-09-08T18:30:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "West Palm Beach",
+            "latitude": "26.715",
+            "name": "Coral Sky Amphitheatre at the S. Florida Fairgrounds",
+            "region": "FL",
+            "longitude": "-80.0536111"
+        },
+        "lineup": [
+            "Ty Dolla $ign",
+            "P-Lo",
+            "YBN Nahmir",
+            "Murda Beatz",
+            "Lil Uzi Vert"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1008351686?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1008238759",
+        "artist_id": "5039947",
+        "url": "https:\/\/www.bandsintown.com\/e\/1008238759?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-20T16:00:00",
+        "datetime": "2018-09-14T12:00:14",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Denver",
+            "latitude": "39.7391667",
+            "name": "Grandoozy",
+            "region": "CO",
+            "longitude": "-104.9841667"
+        },
+        "lineup": [
+            "Ty Dolla $ign",
+            "Big K.R.I.T.",
+            "Lone Dancer",
+            "Ponyrok",
+            "Sturgill Simpson",
+            "Tensnake",
+            "Lost Lakes",
+            "Logic",
+            "Occidental",
+            "Chris Torres",
+            "Tennis",
+            "Flaural",
+            "Wilderado",
+            "Daniel Caesar",
+            "DJ Drew",
+            "De La Soul",
+            "Jade Bird"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1008238759?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1008238762",
+        "artist_id": "5039947",
+        "url": "https:\/\/www.bandsintown.com\/e\/1008238762?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-23T10:00:12",
+        "datetime": "2018-09-15T12:00:34",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Denver",
+            "latitude": "39.7391667",
+            "name": "Grandoozy",
+            "region": "CO",
+            "longitude": "-104.9841667"
+        },
+        "lineup": [
+            "Ty Dolla $ign",
+            "Tennis"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1008238762?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1008238765",
+        "artist_id": "5039947",
+        "url": "https:\/\/www.bandsintown.com\/e\/1008238765?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2018-03-23T10:00:12",
+        "datetime": "2018-09-16T12:00:23",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "Denver",
+            "latitude": "39.7391667",
+            "name": "Grandoozy",
+            "region": "CO",
+            "longitude": "-104.9841667"
+        },
+        "lineup": [
+            "Ty Dolla $ign",
+            "Tennis",
+            "St. Vincent"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1008238765?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1010201169",
+        "artist_id": "5039947",
+        "url": "https:\/\/www.bandsintown.com\/e\/1010201169?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "2017-12-15T16:00:00",
+        "datetime": "2018-10-26T12:00:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "New Orleans",
+            "latitude": "29.993313",
+            "name": "Voodoo Music + Arts Experience",
+            "region": "LA",
+            "longitude": "-90.098418"
+        },
+        "lineup": [
+            "Ty Dolla $ign",
+            "Voodoo Music",
+            "Dorothy",
+            "Anna Lunoe",
+            "The Suffers",
+            "TroyBoi",
+            "Tom Misch",
+            "Starcrawler",
+            "LOUDPVCK",
+            "Droeloe",
+            "Hippie Sabotage",
+            "Kayzo",
+            "YOUNG BOMBS",
+            "Claptone",
+            "AWOLNATION",
+            "Sunflower Bean",
+            "GRYFFIN",
+            "Nora En Pure",
+            "Mt. Joy",
+            "Dave Tipper",
+            "Goldlink",
+            "Marilyn Manson",
+            "Third Eye Blind",
+            "Whokr",
+            "Caamp",
+            "Janelle Monae",
+            "The O'My's",
+            "21 Savage",
+            "Otto",
+            "Motel Radio",
+            "Boogie T",
+            "Arctic Monkeys",
+            "GG Magree"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1010201169?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1010201177",
+        "artist_id": "5039947",
+        "url": "https:\/\/www.bandsintown.com\/e\/1010201177?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-10-27T12:00:16",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "New Orleans",
+            "latitude": "29.993313",
+            "name": "Voodoo Music + Arts Experience",
+            "region": "LA",
+            "longitude": "-90.098418"
+        },
+        "lineup": [
+            "Ty Dolla $ign"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1010201177?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    },
+    {
+        "id": "1010201214",
+        "artist_id": "5039947",
+        "url": "https:\/\/www.bandsintown.com\/e\/1010201214?app_id=artistgrowth-dev&came_from=267",
+        "on_sale_datetime": "",
+        "datetime": "2018-10-28T12:00:00",
+        "description": "",
+        "venue": {
+            "country": "United States",
+            "city": "New Orleans",
+            "latitude": "29.993313",
+            "name": "Voodoo Music + Arts Experience",
+            "region": "LA",
+            "longitude": "-90.098418"
+        },
+        "lineup": [
+            "Ty Dolla $ign"
+        ],
+        "offers": [
+            {
+                "type": "Tickets",
+                "url": "https:\/\/www.bandsintown.com\/t\/1010201214?app_id=artistgrowth-dev&came_from=267",
+                "status": "available"
+            }
+        ]
+    }
+]
