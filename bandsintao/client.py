@@ -43,7 +43,6 @@ def polite_request(url, timeout_seconds=30, max_retries=5, **params):
     Session and a timeout for the request. The following exceptions are documented here:
     http://docs.python-requests.org/en/latest/user/quickstart/#errors-and-exceptions
     """
-    response = None
     with requests.Session() as session:
         try:
             session.mount("http://", requests.adapters.HTTPAdapter(max_retries=max_retries))
@@ -52,16 +51,21 @@ def polite_request(url, timeout_seconds=30, max_retries=5, **params):
             response = session.get(url=url, timeout=timeout_seconds, params=params)
         except requests.exceptions.ConnectionError:
             logger.exception("ConnectionError: A connection error occurred")
+            raise
         except requests.exceptions.Timeout:
             logger.exception("Timeout: The request timed out")
+            raise
         except socket.timeout:
             # We also have to catch socket timeouts due to the underlying urllib3 library:
             # https://github.com/kennethreitz/requests/issues/1236
             logger.exception("Socket timeout: The request timed out")
+            raise
         except requests.exceptions.TooManyRedirects:
             logger.exception("TooManyRedirects: The url => \"%s\" has too many redirects", url)
+            raise
         except requests.exceptions.RequestException:
-            logger.exception("Error")
+            logger.exception("IO Error")
+            raise
 
     return response
 
@@ -90,8 +94,14 @@ def send_request(url, expected_type, **params):
         logger.debug("\n%s\n%s\n", data, jjson.dumps(raw, sort_keys=True, indent=4))
 
     response.raise_for_status()
-    if not isinstance(payload, expected_type) or "error" in payload:
-        raise ValueError("Error loading {} with params {}".format(url, vars(params)))
+    if not isinstance(payload, expected_type):
+        message = "Error loading {} with params {}: response expected {} but was {}".format(url,
+                                                                                            params,
+                                                                                            expected_type,
+                                                                                            type(payload))
+        raise ValueError(message)
+    if "error" in payload:
+        raise ValueError("Error loading {} with params {}: {}".format(url, params, payload["error"]))
 
     return payload
 

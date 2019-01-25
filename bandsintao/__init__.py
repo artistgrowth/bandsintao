@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import collections
 import re
 
-__version__ = "1.1.7a0"
+__version__ = "1.1.8a0"
 __author__ = "Artist Growth"
 __contact__ = "dev@artistgrowth.com"
 __homepage__ = "https://artistgrowth.com"
