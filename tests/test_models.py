@@ -179,6 +179,7 @@ class TestCaseBase(unittest.TestCase):
             response._content = content
             mocked_request = mock.MagicMock(url=url)
             response.request = mocked_request
+            response.status_code = requests.codes.ok
             return response
 
         with mock.patch("requests_toolbelt.utils.dump.dump_response", new=mock.MagicMock()):
@@ -235,6 +236,7 @@ class LocationTestCase(TestCaseBase):
                 # Requests can handles the encoding
                 content = _load_test_file_raw("upcoming.json", dir_name=os.path.join("data", entity.slug))
                 response._content = content
+                response.status_code = requests.codes.ok
                 mocked_polite_request.return_value = response
 
                 self.assertIsNotNone(obj.events)

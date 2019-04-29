@@ -1,12 +1,11 @@
 # coding=utf-8
-from __future__ import unicode_literals
+from __future__ import absolute_import, division, unicode_literals
 
 import hashlib
 import logging
 import operator
 import re
 import socket
-import urlparse
 
 # noinspection PyPackageRequirements
 import bs4
@@ -15,8 +14,9 @@ import requests
 import requests.adapters
 import requests_toolbelt.utils.dump as toolbelt
 import six
+from six.moves import urllib_parse
 
-import jjson
+from . import jjson
 
 logger = logging.getLogger(__name__)
 
@@ -77,11 +77,11 @@ def send_request(url, expected_type, **params):
         "format": ApiConfig.Format,
     }
     params.update(defaults)
-    resolved_url = urlparse.urljoin(ApiConfig.BaseUri, url)
+    resolved_url = urllib_parse.urljoin(ApiConfig.BaseUri, url)
     response = polite_request(resolved_url, **params)
 
     # Ensure datetime objects may be decoded
-    payload = response.json(object_hook=jjson.custom_deserializer)
+    payload = jjson.loads(response.content)
 
     if ApiConfig.Debug and logger.isEnabledFor(logging.DEBUG):
         data = toolbelt.dump_response(response)
@@ -110,14 +110,14 @@ def send_request(url, expected_type, **params):
 class BaseApiObject(dict):
     def __init__(self, *args, **kwargs):
         super(BaseApiObject, self).__init__(*args, **kwargs)
-        for key, value in kwargs.iteritems():
+        for key, value in six.iteritems(kwargs):
             setattr(self, key, value)
 
     def __str__(self):
         return jjson.dumps(self, sort_keys=True, indent=4)
 
     def __setattr__(self, key, value):
-        if key in self.keys():
+        if key in set(six.iterkeys(self)):
             self[key] = value
         elif not hasattr(self, key):
             self[key] = value
@@ -125,14 +125,14 @@ class BaseApiObject(dict):
             raise AttributeError("Cannot set '{}', cls attribute already exists".format(key))
 
     def __getattr__(self, key):
-        if key in self.keys():
+        if key in set(six.iterkeys(self)):
             return self[key]
         raise AttributeError
 
     @property
     def hash(self):
         m = hashlib.md5()
-        for key, value in sorted(self.iteritems(), key=operator.itemgetter(0)):
+        for key, value in sorted(six.iteritems(self), key=operator.itemgetter(0)):
             m.update("{}:{}".format(key, six.text_type(value).encode("utf-8")))
         return m.hexdigest()
 
@@ -217,7 +217,7 @@ class Event(BaseApiObject):
 
         kwargs.setdefault("date", "upcoming")
 
-        return dict(filter(lambda __: __[0] or False, kwargs.iteritems()))
+        return dict(filter(lambda __: __[0] or False, six.iteritems(kwargs)))
 
     @staticmethod
     def search(artist_id=None, location=None, radius=None, date=None, page=None, per_page=None):
@@ -310,16 +310,16 @@ class Artist(BaseApiObject):
                 if content_attr.startswith("bitcon://") or content_attr.startswith("bitintent://"):
                     # Url encoding uses ASCII codepoints only - make sure we don't pass something in UTF-8
                     content_attr = content_attr.encode("ASCII")
-                    content_url_parsed = urlparse.urlparse(content_attr)
+                    content_url_parsed = urllib_parse.urlparse(content_attr)
                     if content_url_parsed and content_url_parsed.query:
-                        query_data = urlparse.parse_qs(content_url_parsed.query)
+                        query_data = urllib_parse.parse_qs(content_url_parsed.query)
                         if "artist" in query_data or "artist_name" in query_data:
                             # Found it
                             identifier = query_data.get("artist", query_data.get("artist_name"))
                             if isinstance(identifier, list):
                                 identifier = identifier[0]
                                 # We also need to unquote this value (i.e. it's url encoded)
-                                identifier = urlparse.unquote(identifier)
+                                identifier = urllib_parse.unquote(identifier)
                             else:
                                 raise ValueError("Invalid condition - identifer could not be ... identified")
                             break
@@ -402,7 +402,7 @@ class LazyLoader(object):
         return self._load(item)
 
     def __iter__(self):
-        for i in xrange(len(self)):
+        for i in range(len(self)):
             return self._load(i)
 
     def _load(self, i):
