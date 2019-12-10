@@ -1,11 +1,10 @@
 # coding=utf-8
-from __future__ import absolute_import, division, unicode_literals
-
 import hashlib
 import logging
 import operator
 import re
 import socket
+import urllib.parse
 
 # noinspection PyPackageRequirements
 import bs4
@@ -13,8 +12,6 @@ import iso639
 import requests
 import requests.adapters
 import requests_toolbelt.utils.dump as toolbelt
-import six
-from six.moves import urllib_parse
 
 from . import jjson
 
@@ -77,7 +74,7 @@ def send_request(url, expected_type, **params):
         "format": ApiConfig.Format,
     }
     params.update(defaults)
-    resolved_url = urllib_parse.urljoin(ApiConfig.BaseUri, url)
+    resolved_url = urllib.parse.urljoin(ApiConfig.BaseUri, url)
     response = polite_request(resolved_url, **params)
 
     # Ensure datetime objects may be decoded
@@ -106,18 +103,17 @@ def send_request(url, expected_type, **params):
     return payload
 
 
-@six.python_2_unicode_compatible
 class BaseApiObject(dict):
     def __init__(self, *args, **kwargs):
-        super(BaseApiObject, self).__init__(*args, **kwargs)
-        for key, value in six.iteritems(kwargs):
+        super().__init__(*args, **kwargs)
+        for key, value in kwargs.items():
             setattr(self, key, value)
 
     def __str__(self):
         return jjson.dumps(self, sort_keys=True, indent=4)
 
     def __setattr__(self, key, value):
-        if key in set(six.iterkeys(self)):
+        if key in self:
             self[key] = value
         elif not hasattr(self, key):
             self[key] = value
@@ -125,15 +121,15 @@ class BaseApiObject(dict):
             raise AttributeError("Cannot set '{}', cls attribute already exists".format(key))
 
     def __getattr__(self, key):
-        if key in set(six.iterkeys(self)):
+        if key in self:
             return self[key]
         raise AttributeError
 
     @property
     def hash(self):
         m = hashlib.md5()
-        for key, value in sorted(six.iteritems(self), key=operator.itemgetter(0)):
-            m.update("{}:{}".format(key, six.text_type(value).encode("utf-8")))
+        for key, value in sorted(self.items(), key=operator.itemgetter(0)):
+            m.update("{}:{}".format(key, str(value).encode("utf-8")))
         return m.hexdigest()
 
 
@@ -217,7 +213,7 @@ class Event(BaseApiObject):
 
         kwargs.setdefault("date", "upcoming")
 
-        return dict(filter(lambda __: __[0] or False, six.iteritems(kwargs)))
+        return dict(filter(lambda __: __[0] or False, kwargs.items()))
 
     @staticmethod
     def search(artist_id=None, location=None, radius=None, date=None, page=None, per_page=None):
@@ -259,7 +255,7 @@ class Artist(BaseApiObject):
 
     def __init__(self, *args, **kwargs):
         self._events = None
-        super(Artist, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def events(self):
@@ -271,7 +267,7 @@ class Artist(BaseApiObject):
 
     @staticmethod
     def _clean_slug(val):
-        if val and isinstance(val, six.string_types):
+        if val and isinstance(val, str):
             for find, replace in [
                 ("/", "%252F"),
                 ("?", "%253F"),
@@ -310,21 +306,21 @@ class Artist(BaseApiObject):
                 if content_attr.startswith("bitcon://") or content_attr.startswith("bitintent://"):
                     # Url encoding uses ASCII codepoints only - make sure we don't pass something in UTF-8
                     content_attr = content_attr.encode("ASCII")
-                    content_url_parsed = urllib_parse.urlparse(content_attr)
+                    content_url_parsed = urllib.parse.urlparse(content_attr)
                     if content_url_parsed and content_url_parsed.query:
-                        query_data = urllib_parse.parse_qs(content_url_parsed.query)
+                        query_data = urllib.parse.parse_qs(content_url_parsed.query)
                         if "artist" in query_data or "artist_name" in query_data:
                             # Found it
                             identifier = query_data.get("artist", query_data.get("artist_name"))
                             if isinstance(identifier, list):
                                 identifier = identifier[0]
                                 # We also need to unquote this value (i.e. it's url encoded)
-                                identifier = urllib_parse.unquote(identifier)
+                                identifier = urllib.parse.unquote(identifier)
                             else:
                                 raise ValueError("Invalid condition - identifer could not be ... identified")
                             break
 
-        if identifier is not None and isinstance(identifier, six.binary_type):
+        if isinstance(identifier, bytes):
             identifier = identifier.decode("utf-8")
 
         return identifier
@@ -334,7 +330,7 @@ class Artist(BaseApiObject):
     _url_pattern_numslug = "(?:a/(?P<numslug>\\d+).*)"
     _url_pattern_slug = "(?:(?P<slug>[^/]+).*)"
     _url_pattern = r"^{}(?:{})$".format(_url_pattern_domain, "|".join((_url_pattern_numslug, _url_pattern_slug)))
-    _url_regex = re.compile(_url_pattern, re.UNICODE | re.IGNORECASE)
+    _url_regex = re.compile(_url_pattern, re.IGNORECASE)
 
     @staticmethod
     def get_identifier(url_or_slug_or_id):
@@ -376,8 +372,8 @@ class Artist(BaseApiObject):
         data = send_request("/artists/{}".format(slug), dict, artist_id=artist_id)
 
         if isinstance(verify_id, int):
-            verify_id = six.text_type(verify_id)
-        if isinstance(verify_id, six.string_types) and data["id"] != verify_id:
+            verify_id = str(verify_id)
+        if isinstance(verify_id, str) and data["id"] != verify_id:
             raise ValueError("Wrong artist payload was returned, somehow")
 
         data["artist_id"] = artist_id

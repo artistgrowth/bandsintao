@@ -1,7 +1,4 @@
 # coding=utf-8
-from __future__ import unicode_literals
-
-import codecs
 import collections
 import datetime
 import logging
@@ -19,7 +16,7 @@ from bandsintao.client import Artist, ApiConfig
 logger = logging.getLogger(__name__)
 
 
-def _load_test_file_raw(filename, dir_name="", encoding="utf-8"):
+def _load_test_file_raw(filename, dir_name=""):
     # Get paths relative to the current object
     if dir_name:
         dir_name = os.path.join(os.path.dirname(__file__), dir_name)
@@ -27,7 +24,7 @@ def _load_test_file_raw(filename, dir_name="", encoding="utf-8"):
         dir_name = os.path.join(os.path.dirname(__file__))
 
     file_path = os.path.join(dir_name, filename)
-    with codecs.open(file_path, "r", encoding=encoding) as test_file:
+    with open(file_path) as test_file:
         output = test_file.read()
     return output
 

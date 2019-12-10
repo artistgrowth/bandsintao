@@ -1,6 +1,4 @@
 # coding=utf-8
-from __future__ import unicode_literals
-
 import datetime
 import decimal
 import json
@@ -9,7 +7,6 @@ import re
 
 import dateutil.parser
 import pytz
-import six
 
 logger = logging.getLogger(__name__)
 
@@ -80,7 +77,7 @@ def custom_deserializer(decoded_json_object):
     result = []
     # Iterate through the decoded values and convert any custom types we find
     for key, value in pairs:
-        if isinstance(value, six.string_types):
+        if isinstance(value, str):
             # Attempt to convert string types that match a datetime patterns
             if _iso_8601_datetime_regex.match(value):
                 length = len(value)
@@ -142,13 +139,13 @@ class JsonEncoder(json.JSONEncoder):
         elif isinstance(o, datetime.date):
             result = o.strftime("%Y-%m-%d")
         elif isinstance(o, (decimal.Decimal,)):
-            # Objects to be converted to unicode prior to json serialization
-            result = six.text_type(o)
+            # Objects to be converted to str prior to json serialization
+            result = str(o)
         else:
             try:
                 iterable = iter(o)
             except TypeError:
-                result = super(JsonEncoder, self).default(o)
+                result = super().default(o)
             else:
                 result = list(iterable)
 
@@ -161,5 +158,5 @@ def dumps(obj, sort_keys=False, indent=None, separators=None):
 
 
 def loads(s):
-    """Deserialize ``s`` (a ``str`` or ``unicode`` instance containing a JSON document) to a Python object."""
+    """Deserialize ``s`` (a ``str`` instance containing a JSON document) to a Python object."""
     return json.loads(s, object_hook=custom_deserializer)
