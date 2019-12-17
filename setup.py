@@ -1,4 +1,3 @@
-import codecs
 import os
 import re
 
@@ -16,16 +15,17 @@ def requirements(filename):
     requirement_file = os.path.join(os.getcwd(), "requirements", filename)
     # Each object returned from `parse_requirements` will have a `Requirment` property
     # whose string representation will be in the format needed to articulate requirements within
-    # requirements.txt files, e.g. 'django==1.5.1', 'six>=1.9.0,<2.0'
+    # requirements.txt files, e.g. 'beautifulsoup4==4.5.1', 'requests>=2.7.0,<3.0'
     return [str(r.req) for r in parse_requirements(requirement_file, session=False)]
 
 
 if os.path.exists("README.md"):
-    long_description = codecs.open("README.md", "r", "utf-8").read()
+    with open("README.md") as f:
+        long_description = f.read()
 else:
     long_description = "See http://pypi.python.org/pypi/{}".format(NAME)
 
-regex = re.compile(r"^__(\w+)__\s*=\s*\"(.+)\"$", re.UNICODE | re.IGNORECASE)
+regex = re.compile(r"^__(\w+)__\s*=\s*\"(.+)\"$", re.IGNORECASE)
 
 meta = {}
 with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), "{}/__init__.py".format(NAME))) as fh:
@@ -57,8 +57,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
