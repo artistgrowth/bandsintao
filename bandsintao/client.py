@@ -2,13 +2,10 @@
 import hashlib
 import logging
 import operator
-import re
 import socket
 import urllib.parse
 
 # noinspection PyPackageRequirements
-import bs4
-import iso639
 import requests
 import requests.adapters
 import requests_toolbelt.utils.dump as toolbelt
@@ -36,7 +33,7 @@ class ApiConfig(object):
 
 def polite_request(url, timeout_seconds=30, max_retries=5, **params):
     """
-    Tries it's hardest not to vomit all over your request. Has retries for the requests
+    Tries its hardest not to vomit all over your request. Has retries for the requests
     Session and a timeout for the request. The following exceptions are documented here:
     http://docs.python-requests.org/en/latest/user/quickstart/#errors-and-exceptions
     """
@@ -150,7 +147,6 @@ class Venue(BaseApiObject):
 
 class Event(BaseApiObject):
     """
-
     http://www.bandsintown.com/api/responses#events-json
 
     Event JSON format:
@@ -233,13 +229,12 @@ class Event(BaseApiObject):
 
 class Artist(BaseApiObject):
     """
-    Contains information about one artists. Also methods for getting
-    information about one artist or all events for an artist
+    Contains information about one artist. Also contains methods for getting
+    information about all events for an artist.
 
     https://www.bandsintown.com/api/responses#artist-json
 
     Artist JSON format:
-    "tracker_count": 453885, "upcoming_event_count": 16}
     {
         "id": "409",
         "name": "Damian Marley",
@@ -260,13 +255,13 @@ class Artist(BaseApiObject):
     @property
     def events(self):
         if not self._events:
-            data = send_request("/artists/{}/events".format(self.name), list, artist_id=self.artist_id)
+            data = send_request("/artists/{}/events".format(self.name), list, artist_id=self.id)
             self._events = Event.parse_all(data)
 
         return self._events
 
     @staticmethod
-    def _clean_slug(val):
+    def _clean_slug(val, fb_lookup):
         if val and isinstance(val, str):
             for find, replace in [
                 ("/", "%252F"),
@@ -275,108 +270,31 @@ class Artist(BaseApiObject):
                 ("\"", "%27C"),
             ]:
                 val = val.replace(find, replace)
+        elif val and isinstance(val, int):
+            val = f"id_{val}" if not fb_lookup else f"fbid_{val}"
         return val
 
     @staticmethod
-    def _extract_meta(response):
+    def load(lookup_val, fb_lookup=False, verify_id=None):
         """
-        Extract the actual identifier from loading the corresponding bandsintown page
+        Load the artist payload into a helper object for consumption. You may pass either the artist name, the
+        numeric ID, or the Facebook page ID into the lookup_val parameter. Note: If you would like to perform
+        an artist lookup by Facebook page ID, you must pass fb_lookup=True into this method.
 
-        Yes this is a hack, but there's really no other way to do this....
-        :param response: The http response
-        :return: The bandsintown artist id
-        """
-        identifier = None
-        if response.status_code != requests.codes.ok:
-            logger.debug("Unable to extract identifier, status code %s", response.status_code)
-            return identifier
-
-        soup = bs4.BeautifulSoup(response.content, "html.parser")
-
-        # Prefer the <meta property="og:title"> tag first, this helps to minimize encoding/decoding issues
-        # We do this first because Bandsintown is not properly encoding artist names with ampersands
-        element = soup.find("meta", attrs={"property": "og:title"})
-        if element:
-            identifier = element.get("content", "")
-
-        # Fallback and attempt to extract the artist id from one of the meta tags
-        if not element or not identifier:
-            for meta in soup.find_all("meta"):
-                content_attr = meta.get("content", "")
-                if content_attr.startswith("bitcon://") or content_attr.startswith("bitintent://"):
-                    # Url encoding uses ASCII codepoints only - make sure we don't pass something in UTF-8
-                    content_attr = content_attr.encode("ASCII")
-                    content_url_parsed = urllib.parse.urlparse(content_attr)
-                    if content_url_parsed and content_url_parsed.query:
-                        query_data = urllib.parse.parse_qs(content_url_parsed.query)
-                        if "artist" in query_data or "artist_name" in query_data:
-                            # Found it
-                            identifier = query_data.get("artist", query_data.get("artist_name"))
-                            if isinstance(identifier, list):
-                                identifier = identifier[0]
-                                # We also need to unquote this value (i.e. it's url encoded)
-                                identifier = urllib.parse.unquote(identifier)
-                            else:
-                                raise ValueError("Invalid condition - identifer could not be ... identified")
-                            break
-
-        if isinstance(identifier, bytes):
-            identifier = identifier.decode("utf-8")
-
-        return identifier
-
-    _url_languages = "(?:(?:{})/)?".format("|".join(iso639.languages.part1.keys()))
-    _url_pattern_domain = "(?:https?://)?(?:(?:www\.)?bandsintown\.com)?/{}".format(_url_languages)
-    _url_pattern_numslug = "(?:a/(?P<numslug>\\d+).*)"
-    _url_pattern_slug = "(?:(?P<slug>[^/]+).*)"
-    _url_pattern = r"^{}(?:{})$".format(_url_pattern_domain, "|".join((_url_pattern_numslug, _url_pattern_slug)))
-    _url_regex = re.compile(_url_pattern, re.IGNORECASE)
-
-    @staticmethod
-    def get_identifier(url_or_slug_or_id):
-        match = Artist._url_regex.match(url_or_slug_or_id)
-        if match:
-            groups = match.groupdict()
-            slug = groups.get("numslug") or groups.get("slug")
-            slug = Artist._clean_slug(slug)
-        else:
-            slug = url_or_slug_or_id
-
-        if re.match(r"\d+", slug):
-            slug = "a/{}".format(slug)
-        url = "https://www.bandsintown.com/{}".format(slug)
-        response = polite_request(url)
-        identifier = Artist._extract_meta(response)
-        slug = Artist._clean_slug(identifier)
-
-        if not identifier:
-            raise ValueError("Could not extract identifer from %s", url)
-
-        return identifier, slug
-
-    @staticmethod
-    def load(artist_id, slug=None, verify_id=None):
-        """
-        Load the artist payload into a helper object for consumption
-
-        You can pass the expected payload "id" into here for validation of artist payload returned,
-        which is the numerical part of a /a/12345 url
-        :param artist_id:
-        :param slug:
+        You may also pass the expected payload "id" into here for validation of artist payload returned.
+        :param lookup_val:
+        :param fb_lookup:
         :param verify_id:
         :return:
         """
-        if not slug:
-            slug = Artist._clean_slug(artist_id)
-
-        data = send_request("/artists/{}".format(slug), dict, artist_id=artist_id)
+        slug = Artist._clean_slug(lookup_val, fb_lookup)
+        data = send_request("/artists/{}".format(slug), dict)
 
         if isinstance(verify_id, int):
             verify_id = str(verify_id)
         if isinstance(verify_id, str) and data["id"] != verify_id:
             raise ValueError("Wrong artist payload was returned, somehow")
 
-        data["artist_id"] = artist_id
         data["slug"] = slug
         data["upcoming_event_count"] = data.get("upcoming_event_count", 0)
         return Artist(**data)

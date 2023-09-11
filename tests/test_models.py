@@ -36,6 +36,7 @@ class ArtistId(collections.namedtuple("ArtistId", ("artist_id", "slug", "music_b
         Loads the artist.json file, e.g.:
 
             {
+                "id": "5039947",
                 "name": "Ty Dolla $ign",
                 "image_url": "https://s3.amazonaws.com/bit-photos/large/6937821.jpeg",
                 "thumb_url": "https://s3.amazonaws.com/bit-photos/thumb/6937821.jpeg",
@@ -48,11 +49,12 @@ class ArtistId(collections.namedtuple("ArtistId", ("artist_id", "slug", "music_b
 
 
         :param slug:
+        :param expected:
         :return: A new instance of `ArtistId`
         """
         raw = _load_test_file_raw(filename="artist.json", dir_name=os.path.join("data", slug))
         data = jjson.loads(raw)
-        return ArtistId(data.get("name"), slug, data.get("mbid"), None, expected)
+        return ArtistId(data.get("id"), slug, data.get("mbid"), None, expected)
 
 
 class lazy_property(object):
@@ -110,55 +112,6 @@ class ArtistData(object):
 _data = ArtistData()
 
 
-class ArtistTestCase(unittest.TestCase):
-    def _test_get_identifier(self, entity, slug_only=False):
-        logger.debug("Testing with entity => %s", entity)
-
-        with mock.patch("bandsintao.client.polite_request") as mocked_request:
-            # Retain everything else from the Response object
-            response = requests.models.Response()
-            # Requests can handles the encoding
-            content = _load_test_file_raw("artist.html", dir_name=os.path.join("data", entity.slug))
-            response._content = content
-            response.status_code = requests.codes.ok
-            mocked_request.return_value = response
-            if slug_only:
-                url_or_slug = entity.slug
-            else:
-                url_or_slug = "https://www.bandsintown.com/{}".format(entity.slug)
-            identifier, slug = Artist.get_identifier(url_or_slug)
-            self.assertEqual(slug, entity.expected or entity.slug)
-            self.assertEqual(identifier, entity.artist_id)
-            return identifier, slug
-
-    def test_get_identifier(self):
-        self._test_get_identifier(_data.rhcp)
-        self._test_get_identifier(_data.judah_and_the_lion)
-
-    def test_get_identifier_only_slug(self):
-        self._test_get_identifier(_data.kings_of_leon, True)
-
-    def test_get_identifier_special_characters_only_slug(self):
-        self._test_get_identifier(_data.ty_dolla, True)
-
-    def test_get_identifier_special_characters(self):
-        self._test_get_identifier(_data.ty_dolla, False)
-
-    def test_testio(self):
-        """
-        Ensure these types of URLs work:
-
-            https://www.bandsintown.com/a/30843-tiesto
-            https://www.bandsintown.com/a/30843
-
-        :return:
-        """
-        self._test_get_identifier(_data.ti3sto, True)
-
-    def test_get_identifier_with_ampersands(self):
-        self._test_get_identifier(_data.judah_and_the_lion)
-
-
 class TestCaseBase(unittest.TestCase):
     __test__ = False
     longMessage = True
@@ -167,11 +120,11 @@ class TestCaseBase(unittest.TestCase):
     def tearDown(self):
         ApiConfig.AppId = None
 
-    def _make_request(self, entity, filename="artist.json"):
+    def _make_request(self, entity, lookup_val=None, fb_lookup=False, filename="artist.json"):
         def our_mocked_polite_request(url, *args, **kwargs):
             # Retain everything else from the Response object
             response = requests.models.Response()
-            # Requests can handles the encoding
+            # Requests can handle the encoding
             content = _load_test_file_raw(filename, dir_name=os.path.join("data", entity.slug))
             response._content = content
             mocked_request = mock.MagicMock(url=url)
@@ -182,8 +135,9 @@ class TestCaseBase(unittest.TestCase):
         with mock.patch("requests_toolbelt.utils.dump.dump_response", new=mock.MagicMock()):
             with mock.patch("bandsintao.client.polite_request") as mocked_polite_request:
                 mocked_polite_request.side_effect = our_mocked_polite_request
-
-                obj = Artist.load(slug=entity.slug, artist_id=entity.artist_id)
+                if not lookup_val:
+                    lookup_val = entity.artist_id if not fb_lookup else entity.facebook_id
+                obj = Artist.load(lookup_val, fb_lookup=fb_lookup)
                 self.assertIsNotNone(obj)
                 logger.debug("obj => %s", obj)
         return obj
@@ -194,12 +148,22 @@ class GeneralTestCase(TestCaseBase):
 
     def test_get_without_app_id(self):
         with self.assertRaises(HTTPError):
-            Artist.load(slug=_data.lil_wayne.artist_id, artist_id=_data.lil_wayne.facebook_id)
+            Artist.load(_data.lil_wayne.facebook_id)
 
     def test_get(self):
         ApiConfig.init(app_id="testing")
         self._make_request(_data.lil_wayne)
         self._make_request(_data.judah_and_the_lion)
+
+    def test_get_with_fbid(self):
+        ApiConfig.init(app_id="testing")
+        data = _data.metallica
+        entity = ArtistId(data.artist_id, "Metallica", data.music_brainz_id, 123456789, None)
+        self._make_request(entity, fb_lookup=True)
+
+    def test_get_with_artist_name(self):
+        ApiConfig.init(app_id="testing")
+        self._make_request(_data.ti3sto, lookup_val=_data.ti3sto.slug)
 
     def test_events(self):
         ApiConfig.init(app_id="testing")
@@ -230,7 +194,7 @@ class LocationTestCase(TestCaseBase):
             with mock.patch("bandsintao.client.polite_request") as mocked_polite_request:
                 # Retain everything else from the Response object
                 response = requests.models.Response()
-                # Requests can handles the encoding
+                # Requests can handle the encoding
                 content = _load_test_file_raw("upcoming.json", dir_name=os.path.join("data", entity.slug))
                 response._content = content
                 response.status_code = requests.codes.ok
